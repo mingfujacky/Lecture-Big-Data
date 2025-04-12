@@ -75,8 +75,8 @@ https://www.facebook.com/share/v/1A84Q7ZgV3/
 
 # AI瘋吉卜力
 <div class="columns">
-    <img src="file/image/吉卜力_龍貓.jpg">
-    <img src="file/image/吉卜力_生活照.jpeg">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/龍貓-預售套票組賣爆-成為今年寒假春節觀影首選-1611892793.jpg?crop=1xw:1xh;center,top&resize=980:*">
+    <img src="https://today-obs.line-scdn.net/0hzx3eVPF_JVcOHDTaLgNaADZKKSY9ej9eLCk_MiocezAiMDJVMC12NCwbe3sqKGMELihsZCgYKDR0JWoBYA/w1200">
 </div>
 
 # ChatGPT 生成吉卜力圖像掀熱潮 
@@ -114,14 +114,14 @@ https://www.facebook.com/share/v/1A84Q7ZgV3/
   - 規劃旅遊、提出創意
 
 # 2024 AI 工具熱門清單
-![bg right:60% w:90%](file/image/2024AI%20清單.jpg)
+![bg right:60% w:90%](https://img.technews.tw/wp-content/uploads/2024/12/19155455/abc.jpg)
 - 聊天機器人
 - 創作工具
 
 # ChatGPT == AI ?
 
 # 廣義的 AI 人工智慧
-![bg left:40% w:90%](file/image/AI-ML-DL-Gen-AI-LLM-Diffusion.webp)
+![bg left:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
 人工智慧可視為一種概念,透過程式模仿人類的感知、理解與行動。
 - 自然語言處理
 - 影像處理
@@ -131,7 +131,8 @@ https://www.facebook.com/share/v/1A84Q7ZgV3/
 - 機器人
 
 # 機器學習
-![bg left:40% w:90%](file/image/AI-ML-DL-Gen-AI-LLM-Diffusion.webp)
+![bg left:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
+
 透過演算法，使用大量資料進行訓練，訓練完成後會產生模型。未來當有新的資料，我們可以使用訓練產生的模型進行預測。
 - 垃圾郵件分類
 - 心臟病風險評估
@@ -139,7 +140,8 @@ https://www.facebook.com/share/v/1A84Q7ZgV3/
 - 網購系統推薦商品給你
 
 # 深度學習
-![bg left:40% w:90%](file/image/AI-ML-DL-Gen-AI-LLM-Diffusion.webp)
+![bg left:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
+
 仿造人類大腦學習的方式，經由類神經網路，一層一層下去交互運算，最後判斷出結果，如同讓AI模仿小孩一樣去學習認貓咪
 - 聊天機器人（自然語言生成）
 - 文字生成圖像
@@ -150,7 +152,8 @@ https://www.facebook.com/share/v/1A84Q7ZgV3/
 - 自動翻譯
 
 # 生成式AI
-![bg left:40% w:90%](file/image/AI-ML-DL-Gen-AI-LLM-Diffusion.webp)
+![bg left:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
+
 讓AI成為會創作新內容的數位畫家和數位作家
   - 協助老師客製化教材及出考卷
   - 學生專屬家教
@@ -169,7 +172,7 @@ https://www.facebook.com/share/v/1A84Q7ZgV3/
 ![bg right:50% w:70%](file/image/175zb%20trunk%202.png)
 
 # 資料量的意義
-![bg right:60% w:90%](file/image/image%20net%20breakthrough.png)
+![bg right:60% w:90%](https://production-media.paperswithcode.com/sota-thumbs/classification-with-binary-neural-network-on-1-large_6ab0d30e.png)
 當訓練的資料量大到某一個程度後，預測的精準度會有一個大幅度的跳升
 
 # 電腦算力每三年提升一倍
@@ -209,8 +212,8 @@ https://www.facebook.com/share/v/1A84Q7ZgV3/
 
 # 下一個關注焦點 - AI 代理人
 <div class="columns">
-    <img src="file/image/單工chatgpt.webp">
-    <img src="file/image/ai agent.webp">
+    <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa12b6e46-df9b-4e87-a974-8d21b3f05dad_2000x1112.png">
+    <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F67dbeb1b-aa87-49e4-aac8-8d583f00f616_2000x1117.png">
 </div>
 
 # 另一個產業重點 - 人形機器人
