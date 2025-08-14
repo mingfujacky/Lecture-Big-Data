@@ -84,7 +84,46 @@ Material: https://github.com/mingfujacky/Lecture-Big-Data.git
 - Project (20%): 
   - (5%)  Progress report oral presentation: Week 9
   - (5%)  Final report oral presentation: Week 15
-  - (10%) Submit final written report on E3 by Week 17 (late submissions will not be accepted)
+  - (10%) Submit final written report by Week 17 (don't be late)
 
 # Course Schedule
 [114 1st Semester](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=114&Sem=1&CrsNo=520020&lang=)
+
+# 大數據的應用 - 協同過濾推薦系統
+為什麼我和朋友總刷到相同的視頻
+[![為什麼我和朋友總刷到相同的視頻](https://i.ytimg.com/vi/PSu-fkxz9z0/mqdefault.jpg)](https://youtu.be/PSu-fkxz9z0?si=jROjSgxFcMnB-0XQ)
+
+# 大數據的應用 - 建立趨勢模型
+點菜上雲端　大數據分析預測來客數
+[![點菜上雲端　大數據分析預測來客數](https://i.ytimg.com/vi/2xSh1M-NrH0/mqdefault.jpg)](https://youtu.be/2xSh1M-NrH0?si=jBuLnQNPkyIruTwG)
+
+# 大數據的應用 - 消費者行為分析
+零售科學：用大數據創造消費者驚奇
+[![零售科學：用大數據創造消費者驚奇](https://i.ytimg.com/vi/F7vm70oos4M/mqdefault.jpg)](https://youtu.be/F7vm70oos4M?si=xv9MvZOZQHt86_aU)
+
+# 大數據的應用 - 風險控管
+精密掌握製造流程
+[![精密掌握製造流程](https://i.ytimg.com/vi/Z8hkWx7mr1c/mqdefault.jpg)](https://youtu.be/Z8hkWx7mr1c?si=Yz9yo6NVt4BG13p9)
+
+# Abuse Big Data Analytics - Cambridge Analytica
+- 劍橋分析（Cambridge Analytica）是一家英國的數據分析公司，成立於2013年。該公司專注於利用數據挖掘和數據分析技術來影響選舉和政治活動。在2016年美國總統選舉期間，劍橋分析被指控利用社交媒體數據來微定向選民。
+- 主要事件
+  - 數據收集： 劍橋分析使用Facebook數據來分析選民行為，這一過程引發了有關隱私和數據保護的激烈討論
+  - 影響力： 他們的策略被認為在美國、英國（支持脫歐公投）及其他國家的政治活動中發揮了重要作用
+  - 醜聞： 在2018年3月爆發不當取得5000萬名Facebook用戶數據的醜聞而停業，並引發了全球範圍內對數據隱私和監管的反思
+  - 影響： 劍橋分析事件促使各國政府加強對數據隱私的立法，並引發了對科技公司數據使用的廣泛討論
+
+# 【Netflix 紀錄片】《個資風暴：劍橋分析事件》
+正式預告片
+[![《個資風暴：劍橋分析事件》| 正式預告](https://i.ytimg.com/vi/qRQEXmg3RaE/mqdefault.jpg)](https://youtu.be/qRQEXmg3RaE?si=97FW_-MAqJwP1oqz)
+
+你是如何被大数据+心理学操控的？
+[![你是如何被大数据+心理学操控的？](https://i.ytimg.com/vi/U5gfGxS-8Pw/mqdefault.jpg)](https://youtu.be/U5gfGxS-8Pw?si=X2VZcxPNS-SIdsG1)
+
+# Introduction to Big Data
+Big Data In 5 Minutes: What Is Big Data and Big Data Analytics
+[![Big Data In 5 Minutes](https://i.ytimg.com/vi/bAyrObl7TYE/mqdefault.jpg)](https://youtu.be/bAyrObl7TYE?si=m3a_g25_q52Sdw46)
+
+# Introduction to Data Science
+Data Science In 5 Minutes
+[![Data Science In 5 Minutes](https://i.ytimg.com/vi/X3paOmcrTjQ/mqdefault.jpg)](https://youtu.be/X3paOmcrTjQ?si=5WSviMr_FFzTSERP)

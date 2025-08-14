@@ -145,9 +145,6 @@ Instead of one machine doing all the work, distributed programming is a programm
   - <span class="yellow-text">YARN (Yet Another Resource Negotiator)</span>: A resource management layer for Hadoop that manages and schedules resources across the cluster.
 
 # Hadoop Introduction
-Big Data In 5 Minutes: What Is Big Data and Big Data Analytics
-[![Big Data In 5 Minutes](https://i.ytimg.com/vi/bAyrObl7TYE/mqdefault.jpg)](https://youtu.be/bAyrObl7TYE?si=m3a_g25_q52Sdw46)
-
 Hadoop In 5 Minutes: What Is Hadoop and Hadoop Ecosystem
 [![Hadoop In 5 Minutes](https://i.ytimg.com/vi/aReuLtY0YMI/mqdefault.jpg)](https://youtu.be/aReuLtY0YMI?si=LTkJOQUQdB6Ib-m6)
 
