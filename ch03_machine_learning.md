@@ -51,8 +51,8 @@ style: |
   }
 
 ---
-# Data Science Process
-![w:550](file/image/fig1_5.jpg)
+# Machine Learning
+![w:550](file/image/fig3_1.jpg)
 
 # Iterative, Not Strictly Linear
 - Data science process is a structured approach to solving data problems efficiently.
@@ -66,7 +66,7 @@ style: |
   6. Present findings & build applications
 
 # Six Steps of Data Science Process and Their Subtasks
-![w:400](file/image/fig2_1.jpg)
+![w:400](file/image/fig3_1.jpg)
 
 # #1: Goal and Project Charter
 - Ask key questions to set goal
@@ -94,16 +94,6 @@ style: |
   - Data quality
   - Licensing and authorization
 ![bg right:40% w:90%](file/image/fig2_3.jpg)
-# What is Data Quality?
-Data quality is a measure of the condition of data based on factors such as
-- Data accuracy
-- Data completeness
-- Data consistency
-- Date duplication
-- Data currency
-- Data conformity
-[![What is Data Quality and Why is it Important?](https://i.ytimg.com/vi/GWiiZWb69Sw/default.jpg)](https://youtu.be/GWiiZWb69Sw?si=1QDq9bZKuHpd0o6k)
-
 
 # Compare Database, Data Mart, Data Warehouse, Data Lake
 ![w:800](https://media.licdn.com/dms/image/v2/D5612AQGRZUyNUK-rPw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721174296278?e=2147483647&v=beta&t=7t9zL5J-6vIIo_QCOV0VCesz5CNbCCT2UsqVeb3HVr8)

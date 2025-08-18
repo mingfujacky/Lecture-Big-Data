@@ -257,6 +257,29 @@ Ambari -> Provision, monitor and maintain cluster
 
 </div>
 
+# Summary
+<span class="small-text">
+
+- Big data is a blanket term for any collection of data sets so large or complex that it becomes difficult to process them using traditional data management techniques. They are characterized by the four Vs: velocity, variety, volume and veracity.
+- Data science involves using methods to analyze small data sets to the gargantuan ones big data is all about.
+- The big data landscape is more than Hadoop alone. It consists of many different technologies that can be categorized into the following:
+  – File system
+  – Distributed programming frameworks
+  – Data integration
+  – Databases
+  – Machine learning
+  – Security
+  – Scheduling
+  – Benchmarking
+  – System deployment
+  – Service programming
+- Not every big data category is utilized heavily by data scientists. They focus mainly on the file system, the distributed programming frameworks, databases, and machine learning. They do come in contact with the other components, but these are domains of other professions.
+- Data can come in different forms. The main forms are
+  – Structured data
+  – Unstructured data
+  – Semi-structured data
+</span>
+
 # Review
 
 # 1. Which of the following best describes Big Data?
