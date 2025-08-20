@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -51,8 +51,8 @@ style: |
   }
 ---
 # Data Science in a Big Data World
-- <span class="yellow-text">**Big data**</span> is a term for any collection of data sets so large or complex that it becomes difficult to process them using traditional data management techniques, such as relational database management systems.
-- <span class="yellow-text">**Data science**</span> involves using methods to analyze massive amounts of data and extract the knowledge it contains. 
+- <span class="blue-text">**Big data**</span> is a term for any collection of data sets so large or complex that it becomes difficult to process them using traditional data management techniques, such as relational database management systems.
+- <span class="blue-text">**Data science**</span> involves using methods to analyze massive amounts of data and extract the knowledge it contains. 
 
 # Benefits and Uses of Data Science and Big Data
 
@@ -87,9 +87,9 @@ https://nextgeninvent.com/blogs/use-cases-of-big-data-in-manufacturing/
 - 1 ZB = 250 billion DVDs
 
 # Variety of Data
-- <span class="yellow-text">**Structured data**</span> is data that depends on a data model and resides in a fixed field within a record.
-- <span class="yellow-text">**Unstructured data**</span> is information that is not organized in a pre-defined data model or schema.
-- <span class="yellow-text">**Semi-structured data**</span> is information that doesn’t follow a strict tabular structure of relational databases, but still contains organizational properties (eg. tags) that make it easier to analyze than unstructured data.
+- <span class="blue-text">**Structured data**</span> is data that depends on a data model and resides in a fixed field within a record.
+- <span class="blue-text">**Unstructured data**</span> is information that is not organized in a pre-defined data model or schema.
+- <span class="blue-text">**Semi-structured data**</span> is information that doesn’t follow a strict tabular structure of relational databases, but still contains organizational properties (eg. tags) that make it easier to analyze than unstructured data.
 
 # Data Type Comparison Table
 
@@ -99,7 +99,7 @@ https://nextgeninvent.com/blogs/use-cases-of-big-data-in-manufacturing/
 | Unstructured        | No predefined schema       | TXT, MP3, MP4, JPG, PDF, DOCX       |
 | Semi-structured     | Loose schema (tags/keys)   | JSON, XML, NoSQL (e.g., MongoDB)    |
 
-<span class="yellow-text">How is Big Data classified?</span>
+<span class="blue-text">How is Big Data classified?</span>
 [![How is Big Data classified?](https://i.ytimg.com/vi/mnoqT8nihT8/mqdefault.jpg)](https://youtu.be/mnoqT8nihT8?si=KWAc5Fb7iRABHHio)
 []()
 
@@ -123,8 +123,8 @@ https://nextgeninvent.com/blogs/use-cases-of-big-data-in-manufacturing/
 # Distributed File System
 - DFS is similar to a normal file system except that DFS runs on multiple servers at once. 
 - You can store, read, delete and secure files via DFS as you do in a standalone machine.
-- A file in DFS will be divided into small blocks and stored on different servers. Hence, <span class="yellow-text">DFS can handle large files</span>.
-- DFS can replicate data across servers for <span class="yellow-text">fault tolerance or parallel operations</span>.
+- A file in DFS will be divided into small blocks and stored on different servers. Hence, <span class="blue-text">DFS can handle large files</span>.
+- DFS can replicate data across servers for <span class="blue-text">fault tolerance or parallel operations</span>.
 - Hadoop Distributed File System (HDFS) is an example.
 ![bg right:40% w:80%](file/image/HDFS-working.jpg.webp)
 
@@ -140,9 +140,9 @@ Instead of one machine doing all the work, distributed programming is a programm
 - Hadoop is an open-source framework for distributed storage and distributed processing of large datasets.
 - It is designed to scale up from a single server to thousands of machines, each offering local computation and storage.
 - The core components of Hadoop are:
-  - <span class="yellow-text">Hadoop Distributed File System (HDFS)</span>: A distributed file system that stores data across multiple machines.
-  - <span class="yellow-text">MapReduce</span>: A programming model for processing large datasets in parallel.
-  - <span class="yellow-text">YARN (Yet Another Resource Negotiator)</span>: A resource management layer for Hadoop that manages and schedules resources across the cluster.
+  - <span class="blue-text">Hadoop Distributed File System (HDFS)</span>: A distributed file system that stores data across multiple machines.
+  - <span class="blue-text">MapReduce</span>: A programming model for processing large datasets in parallel.
+  - <span class="blue-text">YARN (Yet Another Resource Negotiator)</span>: A resource management layer for Hadoop that manages and schedules resources across the cluster.
 
 # Hadoop Introduction
 Hadoop In 5 Minutes: What Is Hadoop and Hadoop Ecosystem
@@ -151,8 +151,8 @@ Hadoop In 5 Minutes: What Is Hadoop and Hadoop Ecosystem
 
 # Scalability
 Scalability is the ability of a system to handle a growing amount of work, or its potential growth.
-- <span class="yellow-text">Scale up</span> (vertical scaling): adding more power (CPU, RAM) to an existing machine.
-- <span class="yellow-text">Scale out</span> (horizontal scaling): adding more machines to a pool of resources
+- <span class="blue-text">Scale up</span> (vertical scaling): adding more power (CPU, RAM) to an existing machine.
+- <span class="blue-text">Scale out</span> (horizontal scaling): adding more machines to a pool of resources
 <br>
 <div class="columns">
 

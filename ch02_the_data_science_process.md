@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -50,6 +50,7 @@ style: |
     font-size: 0.50rem;
   }
 
+math: mathjax
 ---
 # Data Science Process
 ![w:550](file/image/fig1_5.jpg)
@@ -57,7 +58,7 @@ style: |
 # Iterative, Not Strictly Linear
 - Data science process is a structured approach to solving data problems efficiently.
 - It improves collaboration and increases project success.
-- It consists of <span class="yellow-text">**six steps**</span>
+- It consists of <span class="blue-text">**six steps**</span>
   1. Define goal & communicate project charter (what, how, why) with stakeholder 
   2. Retrieve data by finding suitable data sources and getting access rights
   3. Prepare data and clean, integrate, transform them
@@ -125,7 +126,7 @@ print("Stars:", data['stargazers_count'])
 
 ![bg right:40% w:90%](file/image/fig2_4.jpg)
 
-# <span class="yellow-text">Clean</span> Data Errors
+# <span class="blue-text">Clean</span> Data Errors
 - Interpretation errors: date having false value
 - Inconsistencies errors: data is inconsistency across different datasets.
 
@@ -153,7 +154,7 @@ Missing values aren’t necessarily wrong, but you still need to handle them sep
 - Different levels of aggregation: daily vs monthly sales
 > Correct errors as early as possible
 
-# <span class="yellow-text">Combine</span> Data From Difference Data Sources
+# <span class="blue-text">Combine</span> Data From Difference Data Sources
 - Join: combine two datasets based on a common key
 - Append: add rows from one dataset to another
 - Derive: create new variables or features from existing ones
@@ -164,7 +165,7 @@ Missing values aren’t necessarily wrong, but you still need to handle them sep
     <img src="file/image/fig2_10.png" alt="derive column">
 </div>
 
-# <span class="yellow-text">Transform</span> Data in a Ready-to-Analysis Shape
+# <span class="blue-text">Transform</span> Data in a Ready-to-Analysis Shape
 - Scale: normalize or standardize numerical features
 - Reduce variables: helps to reduce the number of features while retaining key information to avoid over-fitting and slow computation
 - Encode: convert categorical variables into numerical format

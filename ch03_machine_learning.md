@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -67,7 +67,7 @@ style: |
 ![bg right:60% w:90%](file/image/main_types_of_machine_learning.png)
 
 # ML Modeling Process
-Building model is to guess the <span class="yellow-text">**target**</span> (response) variable. To do that, it relies on <span class="yellow-text">**features**</span> (predictors)— things you already know 
+Building model is to guess the <span class="blue-text">**target**</span> (response) variable. To do that, it relies on <span class="blue-text">**features**</span> (predictors)— things you already know 
 The process includes:
 - Feature engineering and model selection
 - Training the model
@@ -81,13 +81,13 @@ The process includes:
 >Feature Engineering is the process of transforming raw data into meaningful features that can be better understood and used by machine learning models.
 Often you may need to consult an expert or the appropriate literature to come up with meaningful features.
 
-Suppose we want to predict whether it will rain tomorrow <span class="yellow-text">(Yes/No) **target**</span>.
+Suppose we want to predict whether it will rain tomorrow <span class="blue-text">(Yes/No) **target**</span>.
 * Raw data: 2025-08-19 14:35, Hsinchu, Temperature = 30.2, Humidity = 75%
 * After feature engineering:
 	•	*month = 8, hour = 14, is_weekend = 0*
 	•	*city_Hsinchu = 1, city_Taipei = 0, city_Taichung = 0*
 	•	*temperature = 30.2; humidity = 0.75*
-👉 These structured <span class="yellow-text">features</span> can now be used by a machine learning model.
+👉 These structured <span class="blue-text">features</span> can now be used by a machine learning model.
 
 # Select Model
 Scikit-learn provides a various methods for classification, regression, clustering and dimensionality reduction tasks.
