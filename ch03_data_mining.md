@@ -94,16 +94,16 @@ math: mathjax
 # Frequent Itemset Mining Method 
 - One <span class="blue-text">“pattern discovery” </span> method of associations & relationships techniques to reveal hidden associations in massive data. 
 - In real life, we often face large volumes of transaction (like purchase records, credit card logs). These datasets may look messy, but they hide patterns of items that frequently occur together.
-- Frequent Itemset Mining helps us to:
-  - Automatically find frequent combinations, e.g., “milk + bread” often bought together.
+- <span class="blue-text">Frequent Itemset Mining</span> helps us to:
+  - Find frequent combinations, eg. milk and bread often bought together.
   - Understand customer behaviors, preferences, and habits.
   - Support price setting and product bundling strategies.
 
 # Basic Concept: Market basket analysis
 > “Which groups or sets of items are customers likely to purchase on a given trip to the store?”
 
-- Discover a association rule: 
-  *computer ⇒ antivirus_software [support= 2%,confidence= 60%]*
+- Discover a <span class="blue-text">association rule</span>: 
+  <u>*computer ⇒ antivirus_software [support= 2%,confidence= 60%]*</u>
 - A support of 2% means that 2% of all the transactions under analysis show that computer and antivirus software are purchased together.
 - A confidence of 60% means that 60% of the customers who purchased a computer also bought the software.
 - Typically, association rules are considered interesting if they satisfy a **minimum support threshold** and a **minimum confidence threshold**. 
@@ -157,7 +157,19 @@ Minimum confidence = 70%
 </div>
 </div>
 
+# Case study: Frequent Itemset Mining
+- Objective: identify potential product bundling opportunities.
+- Dataset: transaction data from a retail store.
+- Methodology
+  1. Data Preprocessing: clean and preprocess the transaction data and convert transactions into a one-hot encoded format.
+  2. Apply Apriori Algorithm: set minimum support and confidence thresholds and generate frequent itemsets and association rules.
+- Marketing Decision Recommendations
+   1. Design a “Milk + Bread” breakfast combo set.
+   2. Place milk and bread in adjacent areas to increase cross-selling opportunities.
+[apriori_association_rule.ipynb](file/code/apriori_association_rule.ipynb)
 
+# Summary
 
-# case study: Teaching Case: Frequent Itemset Mining × RFM / Customer Segmentation
+# Homework
 
+# Review 

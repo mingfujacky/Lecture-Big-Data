@@ -82,8 +82,8 @@ Material: https://github.com/mingfujacky/Lecture-Big-Data.git
 - Mid-term exam (20%): closed-book written exam, covering the first half of the course.
 - Final-term exam (20%): closed-book written exam, covering the entire course.
 - Project (20%): 
-  - (5%)  Progress report oral presentation: Week 9
-  - (5%)  Final report oral presentation: Week 15
+  - (0%)  Progress report oral presentation: Week 9
+  - (10%) Final report oral presentation: Week 15
   - (10%) Submit final written report by Week 17 (don't be late)
 
 # Course Schedule
