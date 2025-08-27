@@ -169,7 +169,77 @@ Minimum confidence = 70%
 [apriori_association_rule.ipynb](file/code/apriori_association_rule.ipynb)
 
 # Summary
+- Data mining is part of Knowledge Discovery in Databases (KDD), integrating statistics, AI, and machine learning to uncover anomalies, patterns, and correlations.
+- Key techniques include association analysis, classification, anomaly detection, time series analysis, predictive modeling, and text mining.
+- Frequent Itemset Mining (e.g., Apriori algorithm) is widely used in market basket analysis to discover product combinations, measure support & confidence, and guide marketing strategies like bundling and cross-selling.
 
 # Homework
 
-# Review 
+# Review
+
+# 1. Which of the following is NOT a main purpose of Data Mining?
+A. Detect anomalies in data
+B. Find associations and patterns in data
+C. Predict possible future outcomes
+D. Reduce database storage size
+
+# 2. Data Mining belongs to which stage of the KDD (Knowledge Discovery in Database) process?
+A. Data cleaning
+B. Pattern discovery
+C. Model evaluation
+D. Data visualization
+
+# 3. Which of the following is NOT a typical Data Mining technique?
+A. Association & Relationship analysis
+B. Classification
+C. Regression Testing
+D. Anomaly Detection
+
+# 4. In Market Basket Analysis, what does Support mean?
+A. The proportion of customers who bought A and also bought B
+B. The proportion of all transactions that contain both A and B
+C. The difference in occurrence counts between A and B in the database
+D. The average number of items purchased per customer
+
+# 5. If a rule {Milk} ⇒ {Bread} has a Confidence = 75%, what does it mean?
+A. 75% of all customers bought both milk and bread
+B. 75% of all customers bought at least milk or bread
+C. 75% of customers who bought milk also bought bread
+D. 75% of customers who bought bread also bought milk
+
+# 6. Why do we need to set Minimum Support and Minimum Confidence in Frequent Itemset Mining?
+A. To filter out statistically significant rules
+B. To reduce computational complexity and noise
+C. To avoid over-interpreting rare events
+D. All of the above
+
+# 7. What is the main concept of the Apriori Algorithm?
+A. Building classification models for prediction
+B. Finding seasonal patterns in time-series data
+C. Discovering frequent itemsets using a level-wise filtering approach
+D. Extracting rules from text data using text mining
+
+# 8. Given the following transactions:
+T1: {Milk, Bread, Butter}
+T2: {Beer, Bread}
+T3: {Milk, Beer, Butter}
+T4: {Milk, Bread, Beer}
+T5: {Milk, Bread, Butter}
+
+What is Support({Milk} ⇒ {Bread})?
+A. 40%
+B. 50%
+C. 60%
+D. 75%
+
+# 9. Which of the following is an application of Frequent Itemset Mining in marketing?
+A. Designing product bundles
+B. Customer credit risk evaluation
+C. Stock price time-series prediction
+D. Document classification
+
+# 10. Which of the following is NOT one of the three core disciplines of Data Mining?
+A. Statistics
+B. Artificial Intelligence (AI)
+C. Database Design
+D. Machine Learning
