@@ -114,6 +114,13 @@ https://nextgeninvent.com/blogs/use-cases-of-big-data-in-manufacturing/
 - Bias & noise: avoid irrelevant, misleading, or biased information
 - Source credibility: data collected from reliable channels?
 
+# Briefing Big Data and Data Science
+
+- Big Data in 5 minutes
+[![Big Data in 5 minutes](https://i.ytimg.com/vi/bAyrObl7TYE/default.jpg)](https://youtu.be/bAyrObl7TYE?si=m3a_g25_q52Sdw46)
+
+- Data Science in 5 minutes
+[![Data Science in 5 minutes](https://i.ytimg.com/vi/X3paOmcrTjQ/default.jpg)](https://youtu.be/X3paOmcrTjQ?si=5WSviMr_FFzTSERP)
 
 
 # The Big Data Ecosystem
@@ -279,6 +286,11 @@ Ambari -> Provision, monitor and maintain cluster
   – Unstructured data
   – Semi-structured data
 </span>
+
+# Homework #1 - Updating the Big Data Ecosystem
+- The Big Data Ecosystem illustrated in Figure 1.6 represents technologies that are now outdated. 
+- Your task is to retain the original categories as much as possible (e.g., Distributed File System, Data Integration, Distributed Programming, NoSQL & NewSQL Databases, Machine Learning, Service Programming, …) while replacing the outdated tools/products with modern solutions (2025 era).
+- [Link to Figure 1.6](file/image/fig1_6.jpg)
 
 # Review
 

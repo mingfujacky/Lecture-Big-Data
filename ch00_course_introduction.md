@@ -65,13 +65,14 @@ Material: https://github.com/mingfujacky/Lecture-Big-Data.git
 - TA: 陳宗佑 joey76171.sc13@nycu.edu.tw 
 
 # Course Objectives
-- The course introduces students to a broad overview of big data and data science. 
-- This course covers a briefing of various topics of big data ecosystem and big data analysis with focus on the open source and cloud-native solutions.
+- The course introduces students to a broad overview of **big data** and **data science**. 
+- This course covers a briefing of various topics of **big data ecosystem** and **big data analysis** with focus on the open source and **cloud solutions**.
 
 # Instructional Arrangements
-- Explain course material and hold hands-on sessions in class (laptop is required).
-- Implement examples and assignments in Python.
-- Deliver final project in group or individual. The project topic is related to big data or data science.
+- Explain course material and hold hands-on sessions in class `laptop is required`
+- Implement examples and assignments in `Python`.
+- Deliver `final project` in group or individual. The project topic is related to big data or data science.
+- Late submissions of homework and project will not be accepted
 
 # Evaluation Criteria
 - Attendance(10%): 5 roll calls 
@@ -120,10 +121,3 @@ Material: https://github.com/mingfujacky/Lecture-Big-Data.git
 你是如何被大数据+心理学操控的？
 [![你是如何被大数据+心理学操控的？](https://i.ytimg.com/vi/U5gfGxS-8Pw/mqdefault.jpg)](https://youtu.be/U5gfGxS-8Pw?si=X2VZcxPNS-SIdsG1)
 
-# Introduction to Big Data
-Big Data In 5 Minutes: What Is Big Data and Big Data Analytics
-[![Big Data In 5 Minutes](https://i.ytimg.com/vi/bAyrObl7TYE/mqdefault.jpg)](https://youtu.be/bAyrObl7TYE?si=m3a_g25_q52Sdw46)
-
-# Introduction to Data Science
-Data Science In 5 Minutes
-[![Data Science In 5 Minutes](https://i.ytimg.com/vi/X3paOmcrTjQ/mqdefault.jpg)](https://youtu.be/X3paOmcrTjQ?si=5WSviMr_FFzTSERP)
