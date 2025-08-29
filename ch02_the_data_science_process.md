@@ -75,125 +75,82 @@ math: mathjax
   - Why is this project important?  
   - How will you achieve the project goals?
 - Deliver Project Charter to get authorizes
-  - A clear research goal
-  - The project mission and context
-  - How to perform your analysis
-  - What resources you expect to use
-  - Proof of concepts
-  - Deliverables 
+  - [Hsinchu City Library Data Analysis Project](file/txt/library_project_charter.pdf)
+
 ![bg right:40% w:90%](file/image/fig2_2.jpg)
 
-# Example of Project Charter
-![w:700](file/image/project_charter_example.jpg)
-
-#
-# 📑 Project Charter Example – Data Science
-
-## 1. Project Title
-**Library Borrowing Data Analysis for Hsinchu City Library**
-
----
-
-## 2. Project Purpose
-The Hsinchu City Library has collected extensive borrowing records from its readers.  
-The purpose of this project is to analyze borrowing patterns to:  
-- Understand popular book categories and seasonal trends.  
-- Identify differences in reading behavior between age groups.  
-- Provide recommendations to improve library services and book acquisitions.  
-
----
-
-## 3. Goals & Objectives
-- Build a dashboard that visualizes **borrowing trends by category, time, and user group**.  
-- Perform **frequent itemset mining (Apriori algorithm)** to discover commonly borrowed book combinations.  
-- Conduct **RFM segmentation** to classify active and inactive readers.  
-- Provide **actionable insights** for library management to optimize resource allocation.  
-
----
-
-## 4. Project Scope
-**In Scope**:
-- Use the open dataset **Library Borrowing Records** from the government open data portal.  
-- Apply data cleaning, frequent itemset mining, RFM analysis, and visualization methods.  
-- Deliver interactive dashboard and analysis report.  
-
-**Out of Scope**:
-- Integration with the library’s live IT system.  
-- Building a recommendation system for real-time user interactions (future phase).  
-
----
-
-## 5. Key Tasks & Deliverables
-- **Data Collection & Cleaning** → Import open data CSV, handle missing values, reformat timestamps.  
-- **Exploratory Data Analysis (EDA)** → Identify seasonal borrowing patterns and user demographics.  
-- **Frequent Itemset Mining** → Apply Apriori algorithm to find common borrowing patterns.  
-- **RFM Segmentation** → Segment readers by Recency, Frequency, and Monetary (proxy = number of borrowings).  
-- **Deliverables**: EDA report, itemset mining results, RFM segmentation table, dashboard visualizations.  
-
----
-
-## 6. Roles & Responsibilities
-- **Project Sponsor**: Library Director (approves project, defines strategic needs).  
-- **Project Manager**: Faculty Advisor (guides students, ensures progress).  
-- **Data Scientist(s)**: Perform cleaning, analysis, and modeling.  
-- **Data Engineer**: Support data pipeline preparation.  
-- **Student Team Members**: Contribute to analysis, coding, and visualization.  
-
----
-
-## 7. Timeline / Milestones
-| Phase                     | Timeline (Weeks) | Deliverable |
-|----------------------------|------------------|-------------|
-| Data Collection & Cleaning | Week 1–2         | Cleaned dataset |
-| EDA & Visualization        | Week 3–4         | EDA report with charts |
-| Itemset Mining & RFM       | Week 5–6         | Analysis results |
-| Final Report & Dashboard   | Week 7–8         | Interactive dashboard & final presentation |
-
----
-
-## 8. Approval & Authorization
-By signing this document, the sponsor authorizes the project team to begin work according to the scope and objectives defined.
-
-- **Project Sponsor**: ___________________  
-- **Project Manager**: ___________________  
-- **Date**: ___________________  
-
-
 # #2: Retrieve Data
-- **Internal sources**: excel, log, databases, data marts, data warehouses, data lakes
-- **External sources**:  
-  - Open data ([政府資料開放平臺](https://data.gov.tw))
-  - APIs ([證交所OpenAPI](https://openapi.twse.com.tw/))  
-  - Purchased data ([Semiconductor Market Research Reports](https://www.semi.org))
-- Evaluate data veracity:
-  - Data availability
-  - Data quality
-  - Licensing and authorization
+- Access internal sources
+- Access external sources
+- Evaluate data veracity
+
 ![bg right:40% w:90%](file/image/fig2_3.jpg)
-# What is Data Quality?
-Data quality is a measure of the condition of data based on factors such as
-- Data accuracy
-- Data completeness
-- Data consistency
-- Date duplication
-- Data currency
-- Data conformity
-[![What is Data Quality and Why is it Important?](https://i.ytimg.com/vi/GWiiZWb69Sw/default.jpg)](https://youtu.be/GWiiZWb69Sw?si=1QDq9bZKuHpd0o6k)
+
+# Internal sources
+- Excel, Logs, Files
+- Databases, Data marts, Data warehouses, Data lakes
+<br>
+![w:600](https://media.licdn.com/dms/image/v2/D5612AQGRZUyNUK-rPw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721174296278?e=2147483647&v=beta&t=7t9zL5J-6vIIo_QCOV0VCesz5CNbCCT2UsqVeb3HVr8)
 
 
-# Compare Database, Data Mart, Data Warehouse, Data Lake
-![w:800](https://media.licdn.com/dms/image/v2/D5612AQGRZUyNUK-rPw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721174296278?e=2147483647&v=beta&t=7t9zL5J-6vIIo_QCOV0VCesz5CNbCCT2UsqVeb3HVr8)
-
-# Python Example — API Data Retrieval
+# External sources  
+- Purchased data (eg. Semiconductor Market Research Reports)
+- Open data (eg. [政府資料開放平臺](https://data.gov.tw))
+- APIs
 ```python
+# Call GitHub API
 import requests
-
 url = "https://api.github.com/repos/mingfujacky/Lecture-Database"
 response = requests.get(url)
 data = response.json()
-print("Repo Name:", data['name'])
-print("Stars:", data['stargazers_count'])
+print(f"Repo: {data['name']}; Stars: {data['stargazers_count']}")
 ```
+
+# Evaluate data veracity
+- Licensing and authorization
+- Data availability
+- Data quality
+  - Data accuracy
+  - Data completeness
+  - Data consistency
+  - Data duplication
+  - Data currency
+  - Data conformity
+[![What is Data Quality and Why is it Important?](https://i.ytimg.com/vi/GWiiZWb69Sw/default.jpg)](https://youtu.be/GWiiZWb69Sw?si=1QDq9bZKuHpd0o6k)
+
+# Lab - YouBike Open Data Retrieval  
+```python
+import requests
+from pathlib import Path
+
+url = 'https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/59/5776ed30-fa3c-48f4-9876-d8fb28df0501.csv'
+response = requests.get(url)
+print(response.status_code)  # status_code: 200 代表成功 404 代表失敗
+# response.encoding = 'utf-8'  # 如果回傳亂碼，可以設定編碼試試看
+
+path = Path.home() / '新竹市_YouBike_站點名稱.csv'
+with open(path, 'w', encoding='utf-8') as f:
+    f.write(response.text)
+```
+[新竹市公共自行車租賃系統(YouBike2.0)](file/code/download_open_data.ipynb)
+
+# Lab - 證交所 OpenAPI Data Retrieval  
+```python
+import requests
+import json
+import pandas as pd
+
+# 定義證交所 API 的 URL
+url = 'https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL'  
+response = requests.get(url)  
+
+# load data as json format, then to dataframe
+jsondata = json.loads(response.text)
+df = pd.DataFrame(jsondata)
+print(df.head()) # 顯示前5行數據
+```
+[按收盤價排序並選取前10大收盤價的股票](file/code/api_get_stock.ipynb)
+
 # #3: Clean, Integrate and Transform Data
 - Clean: Remove duplicates, handle missing values, fix errors.
 - Integrate (combine): merge multiple datasets.
