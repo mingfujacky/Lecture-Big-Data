@@ -71,8 +71,8 @@ Material: https://github.com/mingfujacky/Lecture-Big-Data.git
 # Instructional Arrangements
 - Explain course material and hold hands-on sessions in class `laptop is required`
 - Implement examples and assignments in `Python`.
-- Deliver `final project` in group or individual. The project topic is related to big data or data science.
-- Late submissions of homework and project will not be accepted
+- Deliver `final project` by group or individual. The project topic is related to big data or data science.
+- Late submissions of homework and project will not be accepted.
 
 # Evaluation Criteria
 - Attendance(10%): 5 roll calls 
@@ -93,10 +93,14 @@ Material: https://github.com/mingfujacky/Lecture-Big-Data.git
 # 大數據的應用 - 協同過濾推薦系統
 為什麼我和朋友總刷到相同的視頻
 [![為什麼我和朋友總刷到相同的視頻](https://i.ytimg.com/vi/PSu-fkxz9z0/mqdefault.jpg)](https://youtu.be/PSu-fkxz9z0?si=jROjSgxFcMnB-0XQ)
+>協同過濾（collaborative filtering）是一種在推薦系統中廣泛使用的技術。該技術通過分析使用者或者事物之間的相似性，來預測使用者可能感興趣的內容並將此內容推薦給使用者。這裡的相似性可以是人口特徵的相似性，也可以是歷史瀏覽內容的相似性，還可以是個人給予某個事物的回應評分。比如，A和B都是居住在台北，30歲左右的女性，都關注過化妝品相關的內容。這種情況下，協同過濾可能會認為，A和B相似程度很高。於是可能會把A關注而B沒有關注的內容推薦給B。
 
 # 大數據的應用 - 建立趨勢模型
 點菜上雲端　大數據分析預測來客數
 [![點菜上雲端　大數據分析預測來客數](https://i.ytimg.com/vi/2xSh1M-NrH0/mqdefault.jpg)](https://youtu.be/2xSh1M-NrH0?si=jBuLnQNPkyIruTwG)
+>Since iCHEF is a POS system used by thousands of restaurants, it naturally collects a huge amount of transactional, customer, and operational data. With Big Data analytics, it can turn this into valuable insights.
+(a) Analyze which dishes sell best in different locations, times, or seasons.
+(b) Suggest profitable menu combinations (like bundle meals).
 
 # 大數據的應用 - 消費者行為分析
 零售科學：用大數據創造消費者驚奇

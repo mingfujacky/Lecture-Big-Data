@@ -1,0 +1,6 @@
+OrderID,Date,Item,Category,Price,Quantity,Payment,CustomerID
+1001,2025-08-20,Burger,Food,120,2,Credit,C001
+1002,2025-08-20,Coke,Drink,40,1,Cash,C002
+1003,2025-08-21,Pizza,Food,250,1,Credit,C001
+1004,2025-08-21,Ice Cream,Dessert,80,3,Credit,C003
+1005,2025-08-22,Beer,Drink,150,2,Cash,C004
