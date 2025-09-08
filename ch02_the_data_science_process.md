@@ -87,11 +87,14 @@ math: mathjax
 ![bg right:40% w:90%](file/image/fig2_3.jpg)
 
 # Internal sources
-- Excel, Logs, Files
+- Logs, Engineering report ... (with CSV or JSON format)
 - Databases, Data marts, Data warehouses, Data lakes
 <br>
 ![w:600](https://media.licdn.com/dms/image/v2/D5612AQGRZUyNUK-rPw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721174296278?e=2147483647&v=beta&t=7t9zL5J-6vIIo_QCOV0VCesz5CNbCCT2UsqVeb3HVr8)
 
+# Lab - Internal source file operation
+[Handle CSV format](file/code/operate_csv_file.ipynb)
+[Handle JSON format](file/code/operate_json_file.ipynb)
 
 # External sources  
 - Purchased data (eg. Semiconductor Market Research Reports)

@@ -54,23 +54,32 @@ style: |
 - <span class="blue-text">**Big data**</span> is a term for any collection of data sets so large or complex that it becomes difficult to process them using traditional data management techniques, such as relational database management systems.
 - <span class="blue-text">**Data science**</span> involves using methods to analyze massive amounts of data and extract the knowledge it contains. 
 
-# Benefits and Uses of Data Science and Big Data
+# Use Case of Data Science and Big Data
 
-| **Benefit Area**                  | **Use Case / Application**|
+| **Area**                          | **Use Case**        |
 |-----------------------------------|---------------------------|
-| Business intelligence & marketing | Targeted advertising      |
-|                                   | Campaign optimization     |
-| Operations, risk & finance        | Fraud detection           |
-|                                   | Operations optimization   |
-| Public services & social good     | Government analytics & open data |
-|                                   | National security & surveillance |
-| Education & research              | Online learning analytics (MOOCs)|
-|                                   | Scientific research acceleration |
+| Business intelligence & marketing | Targeted advertising (精準廣告)     |
+|                                   | Campaign optimization (行銷活動優化)  |
+| Operations, risk & finance        | Fraud detection (詐騙檢測)           |
+|                                   | Operations optimization (運營優化)   |
+| Public services & social good     | Open data (開放數據) |
+|                                   | National security & surveillance (國家安全與監控) |
+| Education & research              | Online learning analytics (MOOCs) (線上學習分析) |
+|                                   | Scientific research acceleration (科學研究加速) |
 
 # Big Data in Manufacturing
 ![w:750](https://nextgeninvent.com/wp-content/uploads/2024/07/Big-Data-in-Manufacturing-Use-Cases.jpg)
 
 https://nextgeninvent.com/blogs/use-cases-of-big-data-in-manufacturing/
+
+# Manufacturing Use Cases
+- **Process Improvement**: leverage IoT sensor data with advanced analytics to diagnose root causes of equipment issues
+- **Quality Assurance**: use image processing and pattern recognition to detect defects in real time
+- **Risk Evaluation**: analyze past data to identify potential risks in operations
+- **Predictive Maintenance**: use big data analytics to predict when equipment needs servicing to avoid failures
+- **Product Lifecycle Management (PLM)**: combine historical and real-time data to improve design, manufacturing decisions
+- **Data-driven Enterprise Growth**: leverage large-scale data modeling to help companies identify new product or market opportunities
+
 
 # Characteristics of Big Data
 - **Volume**: How much data is there?
@@ -95,13 +104,12 @@ https://nextgeninvent.com/blogs/use-cases-of-big-data-in-manufacturing/
 
 | **Type**            | **Structure**              | **Example Formats**                 |
 |---------------------|----------------------------|-------------------------------------|
-| Structured          | Rigid schema (tables)      | SQL databases (ed. MySQL), XLSX     |
+| Structured          | Rigid schema (tables)      | SQL databases (ed. MySQL), XLSX, CSV|
 | Unstructured        | No predefined schema       | TXT, MP3, MP4, JPG, PDF, DOCX       |
 | Semi-structured     | Loose schema (tags/keys)   | JSON, XML, NoSQL (e.g., MongoDB)    |
 
-<span class="blue-text">How is Big Data classified?</span>
-[![How is Big Data classified?](https://i.ytimg.com/vi/mnoqT8nihT8/mqdefault.jpg)](https://youtu.be/mnoqT8nihT8?si=KWAc5Fb7iRABHHio)
-[]()
+**How is data type classified?**
+[![How is data type classified?](https://i.ytimg.com/vi/mnoqT8nihT8/default.jpg)](https://youtu.be/mnoqT8nihT8?si=KWAc5Fb7iRABHHio)
 
 # Velocity of Data
 - Generate real-time or near-real-time data flow: data streams continuously, not in batches.
