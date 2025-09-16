@@ -210,20 +210,29 @@ Missing values aren’t necessarily wrong, but you still need to handle them sep
 </div>
 
 # #4: Exploratory Data Analysis (EDA)
-EDA refers to the process of performing <u>initial investigations</u> on data with the help of summary statistics and graphical representations.
-- Understand the data distribution
-- Identify patterns, trends, and anomalies
-- Generate summary statistics and visualizations
-- Formulate hypotheses and insights for further analysis
+EDA uses (1) **basic statistics** and (2) **data visualization** to get an overview of the data we have, in order to do (3) **feature acquisition**.
+- Know the Data - what information and structure of the data
+- Check the Data - any outliers or unusual value
+- Correlation between Data - find out important variables.
 ![bg right:40% w:90%](file/image/fig2_14.jpg)
 
 # EDA Techniques
-![bg right:60% w:90%](file/image/fig2_EDA.png.avif)
+- **Step1**: recognizing the type of each variable so you can apply the right descriptive statistics, cleaning methods, and visualization techniques.
+- **Step4**: detect and minimize impact of missing and unexpected values
+- **Step6**: feature engineering, where features are transformed or combined to generate new features.
+![bg right:50% w:90%](file/image/EDA-steps.png)
 
 # #5: Build the Models
 - With clean data in place and a good understanding of the content, you’re ready to build models with the goal of making better predictions, classifying objects, or gaining an understanding of the system that you’re modeling.
 - The modeling techniques come from machine learning, data mining, neural network or statistics fields
 ![bg right:40% w:90%](file/image/fig2_21.jpg)
+
+# Model: Simplified Representations of Complex System
+- Models are used to understand, predict the behavior of systems.
+- In data science, models often use statistical or machine learning to analyze and interpret data.
+- Formulate a problem as a function, like estimate the house price y = f(x)
+![bg right:50% w:100%](file/image/house_pricing_model.png)
+
 
 # 5-1: Model and Variable Selection
 - Your findings from the exploratory analysis should already give a fair idea of (1) which variables are important and (2) what variables will help you construct a good model. 
@@ -287,6 +296,12 @@ $$
 - Data exploration: Dive deeper into your data using descriptive statistics and visual techniques.
 - Data modeling: Use ML and statistical techniques to achieve project goal.
 - Presentation and automation: Present your results to the stakeholders and industrialize your analysis process for repetitive reuse and integration with other tools.
+
+# 學習地圖
+>超圖解
+資料科學 ✕ 機器學習
+實戰探索：使用 Python
+![bg right:70% w:90%](file/image/data_science_learning_map.png)
 
 # Review
 # 1. Which of the following best describes the data science process?

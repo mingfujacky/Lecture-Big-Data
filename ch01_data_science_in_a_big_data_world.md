@@ -171,8 +171,8 @@ Scalability is the ability of a system to handle a growing amount of work, or it
 <br>
 <div class="columns">
 
-**Scale Up vs. Scale Out Data Storage**
-[![Scale Up vs. Scale Out Data Storage](https://i.ytimg.com/vi/W7S7dQgvS4c/default.jpg)](https://youtu.be/W7S7dQgvS4c?si=YHojS_YExApNFoKq)
+**Scale Up vs. Scale Out**
+[![Scale Up vs. Scale Out](https://i.ytimg.com/vi/gBCtKSVj-p8/default.jpg)](https://youtu.be/gBCtKSVj-p8?si=-vVeplWdC8IbAzuO)
 
 **Differences of scaling methods**
 [![Vertical Vs Horizontal Scaling: Key Differences You Should Know](https://i.ytimg.com/vi/dvRFHG2-uYs/default.jpg)](https://youtu.be/dvRFHG2-uYs?si=xXppSLvtj_1MUk4o)
