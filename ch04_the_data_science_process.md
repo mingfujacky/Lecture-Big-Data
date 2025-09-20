@@ -75,7 +75,7 @@ math: mathjax
   - Why is this project important?  
   - How will you achieve the project goals?
 - Deliver Project Charter to get authorizes
-  - [Hsinchu City Library Data Analysis Project](file/txt/library_project_charter.pdf)
+  - [Hsinchu City Library Data Analysis Project](file/doc/library_project_charter.pdf)
 
 ![bg right:40% w:90%](file/image/fig2_2.jpg)
 
