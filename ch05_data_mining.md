@@ -58,19 +58,18 @@ math: mathjax
 <div>
 
 **Milestones of data mining**
-![w:500](file/image/data_mining_history.png)
+![w:300](file/image/data_mining_history.png)
 </div>
 
 <div>
 
 **What is Data Mining?**
-[![What is Data Mining and Why is it Important?](https://i.ytimg.com/vi/mOfPG5ZIY-k/default.jpg)](https://youtu.be/W7S7dQgvS4c?si=YHojS_YExApNFoKq)
+[![Data Mining Process](https://i.ytimg.com/vi/81bm2OsEzbg/default.jpg)](https://youtu.be/81bm2OsEzbg?si=k64OF39aHol-dAs4)
 </div>
 </div>
-
-* KDD: Knowledge Discovery in Database
-* Data mining is to find anomalies, patterns, or correlations among data
-* Data mining comprises three disciplines: statistic, AI, ML
+<span class="small-text">* KDD: Knowledge Discovery in Database</span><br>
+<span class="small-text">* Data mining is to find anomalies, patterns, or correlations among data</span><br>
+<span class="small-text">* Data mining comprises three disciplines: statistic, AI, ML</span>
 
 # Data Mining Techniques
 <div class="columns">

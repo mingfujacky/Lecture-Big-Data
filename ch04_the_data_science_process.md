@@ -96,9 +96,18 @@ math: mathjax
 [Handle CSV format](file/code/operate_csv_file.ipynb)
 [Handle JSON format](file/code/operate_json_file.ipynb)
 
-# External sources  
+# Compare CSV and JSON format
+| Feature        | CSV                          | JSON                         |
+|----------------|------------------------------|------------------------------|
+| Structure      | Tabular data                 | Hierarchical data (nested)           |
+| Readability    | Easy to read and write       | More complex, but flexible   |
+| Data Types     | Limited (strings, numbers)   | Supports various data types  |
+| Size           | Generally smaller            | Can be larger due to structure|
+| Use Cases      | Simple datasets, spreadsheets| Complex data, APIs           |  
+
+# External sources
 - Purchased data (eg. Semiconductor Market Research Reports)
-- Open data (eg. [政府資料開放平臺](https://data.gov.tw))
+- Open data (eg. https://data.gov.tw)
 - APIs
 ```python
 # Call GitHub API
@@ -106,19 +115,19 @@ import requests
 url = "https://api.github.com/repos/mingfujacky/Lecture-Database"
 response = requests.get(url)
 data = response.json()
-print(f"Repo: {data['name']}; Stars: {data['stargazers_count']}")
+print(data['name'], data['stargazers_count'], 'stars')
 ```
 
-# Evaluate data veracity
+# Evaluate data veracity (Data quality)
 - Licensing and authorization
-- Data availability
-- Data quality
-  - Data accuracy
-  - Data completeness
-  - Data consistency
-  - Data duplication
-  - Data currency
-  - Data conformity
+- Data availability, or whether you can get the data
+- Data accuracy, or whether data is correct
+- Data completeness, or data sets that include all the elements they should
+- Data consistency, where the same data values stored in different systems are identical
+- Degree of duplicate data records
+- Data currency, meaning that the data is up to date
+- Data conformity, meeting the required standard data formats defined by the organization
+
 [![What is Data Quality and Why is it Important?](https://i.ytimg.com/vi/GWiiZWb69Sw/default.jpg)](https://youtu.be/GWiiZWb69Sw?si=1QDq9bZKuHpd0o6k)
 
 # Lab - YouBike Open Data Retrieval  
@@ -131,28 +140,25 @@ response = requests.get(url)
 print(response.status_code)  # status_code: 200 代表成功 404 代表失敗
 # response.encoding = 'utf-8'  # 如果回傳亂碼，可以設定編碼試試看
 
-path = Path.home() / '新竹市_YouBike_站點名稱.csv'
+path = Path.cwd() /'..'/'file'/ 'csv' /'新竹市_YouBike_站點名稱.csv'
 with open(path, 'w', encoding='utf-8') as f:
     f.write(response.text)
 ```
-[新竹市公共自行車租賃系統(YouBike2.0)](file/code/download_open_data.ipynb)
+[進階題: 下載YouBike站點照片](file/code/download_open_data.ipynb)
 
 # Lab - 證交所 OpenAPI Data Retrieval  
 ```python
 import requests
-import json
 import pandas as pd
 
 # 定義證交所 API 的 URL
 url = 'https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL'  
 response = requests.get(url)  
 
-# load data as json format, then to dataframe
-jsondata = json.loads(response.text)
-df = pd.DataFrame(jsondata)
+df = pd.DataFrame(response.json())
 print(df.head()) # 顯示前5行數據
 ```
-[按收盤價排序並選取前10大收盤價的股票](file/code/api_get_stock.ipynb)
+[進階題: 按收盤價排序並選取前10大收盤價的股票](file/code/api_get_stock.ipynb)
 
 # #3: Clean, Integrate and Transform Data
 - Clean: Remove duplicates, handle missing values, fix errors.
@@ -162,8 +168,8 @@ print(df.head()) # 顯示前5行數據
 ![bg right:40% w:90%](file/image/fig2_4.jpg)
 
 # <span class="blue-text">Clean</span> Data Errors
-- Interpretation errors: date having false value
-- Inconsistencies errors: data is inconsistency across different datasets.
+- Data having false value (age = 200)
+- Data is inconsistency across different datasets. ('Female' in set A vs 'F' in set B)
 
 ![bg right:50% w:90%](file/image/tbl2_2.png)
 
@@ -180,7 +186,10 @@ print(df.head()) # 顯示前5行數據
 
 # Missing Values
 Missing values aren’t necessarily wrong, but you still need to handle them separately; 
-![w:600](file/image/tbl2_4.png)
+![bg right 80% w:600](file/image/tbl2_4.png)
+<span class="small-text">- If most of your “age” data follows a normal distribution with mean = 35 and standard deviation = 5, you can randomly draw new values for the missing entries from that same distribution.</span>
+<span class="small-text">- You build a model (like regression, k-NN, or machine learning) to predict the missing value using other available variables — e.g., predict missing “income” based on “age,” “education,” and “job.”</span>
+
 
 # Other Data Issues
 - Duplicated values: same data appears multiple times
@@ -221,6 +230,12 @@ EDA uses (1) **basic statistics** and (2) **data visualization** to get an overv
 - **Step4**: detect and minimize impact of missing and unexpected values
 - **Step6**: feature engineering, where features are transformed or combined to generate new features.
 ![bg right:50% w:90%](file/image/EDA-steps.png)
+
+# Visualization Techniques
+<div class="columns">
+    <img src="file/image/fig2_15.png">
+    <img src="file/image/fig2_16.png">
+</div>
 
 # #5: Build the Models
 - With clean data in place and a good understanding of the content, you’re ready to build models with the goal of making better predictions, classifying objects, or gaining an understanding of the system that you’re modeling.
@@ -263,15 +278,15 @@ model.fit(X, y)
 print("Intercept:", model.intercept_)
 print("Slope:", model.coef_)
 print(f"Formula is y = {model.coef_} x + {model.intercept_}")
-plt.scatter(X, y)
-plt.plot(X, model.coef_ * X + model.intercept_, 'b')
-
 point_x = 2.5
 point_y = model.predict([[2.5]]).item()
 print(f"Prediction for x = {point_x} is", point_y)
+
+plt.scatter(X, y)
+plt.plot(X, model.coef_ * X + model.intercept_, 'b')
+
 plt.scatter(point_x, point_y, color = 'r')
 plt.text(point_x + 0.2, point_y, f'predict ({float(point_x):.2f}, {float(point_y):.2f})', fontsize=10, color = 'r')
-
 plt.show()
 ```
 
