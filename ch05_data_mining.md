@@ -166,6 +166,7 @@ Minimum confidence = 70%
    1. Design a “Milk + Bread” breakfast combo set.
    2. Place milk and bread in adjacent areas to increase cross-selling opportunities.
 [apriori_association_rule.ipynb](file/code/apriori_association_rule.ipynb)
+[apriori_association_rule_alt2.ipynb](file/code/apriori_association_rule_alt2.ipynb)
 
 # Summary
 - Data mining is part of Knowledge Discovery in Databases (KDD), integrating statistics, AI, and machine learning to uncover anomalies, patterns, and correlations.
