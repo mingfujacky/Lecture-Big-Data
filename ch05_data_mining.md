@@ -91,45 +91,43 @@ math: mathjax
 </div>
 
 # Frequent Itemset Mining Method 
-- One <span class="blue-text">“pattern discovery” </span> method of associations & relationships techniques to reveal hidden associations in massive data. 
+- An associations & relationships technique to reveal hidden association pattern in massive data. 
 - In real life, we often face large volumes of transaction (like purchase records, credit card logs). These datasets may look messy, but they hide patterns of items that frequently occur together.
 - <span class="blue-text">Frequent Itemset Mining</span> helps us to:
-  - Find frequent combinations, eg. milk and bread often bought together.
-  - Understand customer behaviors, preferences, and habits.
-  - Support price setting and product bundling strategies.
+  - Understand customer behaviors, preferences, and habits, eg. milk and bread often bought together.
+  - Support product bundling strategies.
 
 # Basic Concept: Market basket analysis
-> “Which groups or sets of items are customers likely to purchase on a given trip to the store?”
+> “Which groups of products are customers likely to purchase together?”
 
-- Discover a <span class="blue-text">association rule</span>: 
-  <u>*computer ⇒ antivirus_software [support= 2%,confidence= 60%]*</u>
-- A support of 2% means that 2% of all the transactions under analysis show that computer and antivirus software are purchased together.
-- A confidence of 60% means that 60% of the customers who purchased a computer also bought the software.
-- Typically, association rules are considered interesting if they satisfy a **minimum support threshold** and a **minimum confidence threshold**. 
-- These thresholds can be set by users or domain experts.
+- The goal is to discover <span class="blue-text">association rules (關聯規則)</span>: 
+  *computer ⇒ antivirus_software&nbsp;&nbsp;&nbsp;&nbsp; [support= 2%,confidence= 60%]*
+  - A support of 2% means that 2% of all the transactions under analysis show that computer and antivirus software are purchased together.
+  - A confidence of 60% means that 60% of the customers who purchased a computer also bought the software.
+  - Typically, association rules are considered interesting if they satisfy a **minimum support threshold** and a **minimum confidence threshold**. 
+  - These thresholds can be set by users or domain experts.
 
 # Formula of Support and Confidence
-$$
-support(A \Rightarrow B) = P(A \cup B) \tag{buy both A and B}
-$$
-<br>
 
-$$
-confidence(A \Rightarrow B) = P(B|A) \tag{buy B given A}
-$$
-<br>
+![](https://www.researchgate.net/publication/337999958/figure/fig1/AS:867641866604545@1583873349676/Formulae-for-support-confidence-and-lift-for-the-association-rule-X-Y.ppm)
 
+- Support(X ⇒ Y): the proportion of transactions that buy X and Y.
+- Confidence(X ⇒ Y): the proportion of transactions that buy Y given X.
+
+# Formula of Lift
 $$
-confidence(A \Rightarrow B) = P(B|A) 
-= \frac{support(A \cup B)}{support(A)} 
-= \frac{support\_count(A \cup B)}{support\_count(A)}
+\text{Lift}(X \Rightarrow Y) = \frac{P(X, Y)}{P(X) \times P(Y)}
 $$
+Lift is the ratio illustrates how strongly X and Y are related comparing with by-chance.
+- Lift > 1: X and Y are positively correlated, more often than by-chance.
+- Lift < 1: X and Y are negatively correlated, less often than by-chance.
+- Lift = 1: X and Y are independent, no association.
 
 # Calculate Support and Confidence
 Suppose we have 5 transactions, each recording the items a customer purchased:
 ```
 T1: {Milk, Bread, Butter}
-T2: {Beer, Bread}
+T2: {Beer}
 T3: {Milk, Beer, Butter}
 T4: {Milk, Bread, Beer}
 T5: {Milk, Bread, Butter}
@@ -140,7 +138,23 @@ Support({Milk} ⇒ {Bread})
 Confidence({Milk} ⇒ {Bread})
 = Transactions containing {Milk, Bread} ÷ Transactions containing {Milk} = 3 / 4 = 0.75 (75%)
 
+# Calculate Lift
+Lift({Milk} ⇒ {Bread})
+= Support({Milk, Bread}) / ((Support({Milk}) × Support({Bread}))
+= (3/5) / [(4/5) * (3/5)]
+= 0.6 / [0.8 × 0.6] = 1.25
+- Since Lift > 1, it indicates that Milk and Bread are positively correlated, meaning customers who buy Milk are more likely to also buy Bread compared to random chance. 
+
+# Introduce Apriori Algorithm
+- The Apriori algorithm is a classic algorithm used in data mining for *mining frequent itemsets and relevant association rules*.
+- It operates on the principle that if an itemset is frequent, then all of its subsets must also be frequent. This is known as the Apriori property.
+  - 假設一個集合 {A,B} 大於最小支持度(Min Support)，則它的子集合 {A}, {B} 出現次數必定大於最小支持度。
+  - 假設集合 {A} 出現次數小於最小支持度，則它與其他商品的集合，如 {A,B}，必定小於最小支持度。
+- The algorithm uses a level-wise search approach, where it iteratively generates candidate itemsets of increasing size and prunes those that do not meet the minimum support threshold. 
+  
+
 # Apriori Algorithm to Find Frequent Itemsets by Confined Candidate
+
 <div class="columns">
 <div>
 
@@ -152,7 +166,7 @@ Minimum support = 2
 
 Minimum confidence = 70%
 ![w:700](file/image/apriori_confidence.png)
-[![Apriori Algorithm Explained ](https://i.ytimg.com/vi/guVvtZ7ZClw/default.jpg)](https://youtu.be/guVvtZ7ZClw?si=PHcBQFmdUUp6omPW)
+[![Apriori Algorithm Explained ](https://i.ytimg.com/vi/ukoDGSN_4O4/default.jpg)](https://youtu.be/ukoDGSN_4O4?si=B5AQ6mok2UZdpQDq)
 </div>
 </div>
 
@@ -162,9 +176,8 @@ Minimum confidence = 70%
 - Methodology
   1. Data Preprocessing: clean and preprocess the transaction data and convert transactions into a one-hot encoded format.
   2. Apply Apriori Algorithm: set minimum support and confidence thresholds and generate frequent itemsets and association rules.
-- Marketing Decision Recommendations
-   1. Design a “Milk + Bread” breakfast combo set.
-   2. Place milk and bread in adjacent areas to increase cross-selling opportunities.
+- Result of marketing decision recommendations
+
 [apriori_association_rule.ipynb](file/code/apriori_association_rule.ipynb)
 [apriori_association_rule_alt2.ipynb](file/code/apriori_association_rule_alt2.ipynb)
 
@@ -174,6 +187,7 @@ Minimum confidence = 70%
 - Frequent Itemset Mining (e.g., Apriori algorithm) is widely used in market basket analysis to discover product combinations, measure support & confidence, and guide marketing strategies like bundling and cross-selling.
 
 # Homework
+HW3 - U-bike 2.0 Data Analysis
 
 # Review
 
