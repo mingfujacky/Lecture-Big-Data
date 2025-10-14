@@ -144,7 +144,6 @@ path = Path.cwd() /'..'/'file'/ 'csv' /'新竹市_YouBike_站點名稱.csv'
 with open(path, 'w', encoding='utf-8') as f:
     f.write(response.text)
 ```
-[進階題: 下載YouBike站點照片](file/code/download_open_data.ipynb)
 
 # Lab - 證交所 OpenAPI Data Retrieval  
 ```python
@@ -218,6 +217,11 @@ Missing values aren’t necessarily wrong, but you still need to handle them sep
     <img src="file/image/fig2_13.jpg" alt="encode">
 </div>
 
+# Lab - Preprocess shoes data and student grade data 
+[`preprocess_shoe_size.ipynb`](file/code/preprocess_shoe_size.ipynb)
+[`preprocess_student_grades.ipynb`](file/code/preprocess_student_grades.ipynb)
+
+
 # #4: Exploratory Data Analysis (EDA)
 EDA uses (1) **basic statistics** and (2) **data visualization** to get an overview of the data we have, in order to do (3) **feature acquisition**.
 - Know the Data - what information and structure of the data
@@ -236,6 +240,9 @@ EDA uses (1) **basic statistics** and (2) **data visualization** to get an overv
     <img src="file/image/fig2_15.png">
     <img src="file/image/fig2_16.png">
 </div>
+
+# Lab - EDA on Restaurant Sales Dataset
+[`restaurant_sales_EDA.ipynb`](file/code/restaurant_sales_EDA.ipynb)
 
 # #5: Build the Models
 - With clean data in place and a good understanding of the content, you’re ready to build models with the goal of making better predictions, classifying objects, or gaining an understanding of the system that you’re modeling.
@@ -311,6 +318,9 @@ $$
 - Data exploration: Dive deeper into your data using descriptive statistics and visual techniques.
 - Data modeling: Use ML and statistical techniques to achieve project goal.
 - Presentation and automation: Present your results to the stakeholders and industrialize your analysis process for repetitive reuse and integration with other tools.
+
+# Homework
+HW3 - Utilize Government Open Data
 
 # 學習地圖
 >超圖解

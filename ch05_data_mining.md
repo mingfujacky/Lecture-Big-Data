@@ -186,9 +186,6 @@ Minimum confidence = 70%
 - Key techniques include association analysis, classification, anomaly detection, time series analysis, predictive modeling, and text mining.
 - Frequent Itemset Mining (e.g., Apriori algorithm) is widely used in market basket analysis to discover product combinations, measure support & confidence, and guide marketing strategies like bundling and cross-selling.
 
-# Homework
-HW3 - U-bike 2.0 Data Analysis
-
 # Review
 
 # 1. Which of the following is NOT a main purpose of Data Mining?

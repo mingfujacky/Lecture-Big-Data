@@ -102,14 +102,26 @@ Scikit-learn provides a various methods for classification, regression, clusteri
 - Validation is a way to estimate how well the model will perform on unseen data. Not just on the training data.
 - Error measure (how wrong the model is) and validation strategies would be designed
   - Error measure method: mean squared error (MSE), or accuracy
-  - Validation strategies:  holdout validation, k-fold cross-validation.
+    - MSE measures how far off your numeric predictions are.
+    -	Accuracy measures how often your categorical predictions are correct.
+  - Validation strategies
+    - holdout validation (截留驗證法): train once, test once (80% for training and 20% for testing) 
+    - k-fold cross-validation(交叉驗證法): train many times on different splits, then average results
 
 # Apply Model
 - After validating the model, the final step is to apply it to new, unseen data to make predictions.
 - This involves using the trained model to infer the target variable based on the features of the new data.
 
-# Supervised Learning
+# Classification
 Case study: Recognition of Handwritten Digits
 ![bg right:40% w:90%](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png)
 
 [`recognition_handwritten_digits.ipynb`](file/code/recognition_handwritten_digits.ipynb)
+
+# Clustering
+Case study: Iris Flower Dataset
+[`kmeans_iris.ipynb`](file/code/kmeans_iris.ipynb)
+
+# Dimensionality Reduction
+Case study: PCA on Wine Quality Dataset
+[`pca_wine_quality.ipynb`](file/code/pca_wine_quality.ipynb)
