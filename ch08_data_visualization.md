@@ -81,15 +81,3 @@ style: |
 
 # RFM Analysis on Library Borrowing Data
 [`RFM_hsinchu_city_library_borrowing_data_analysis.ipynb`](file/code/RFM_hsinchu_city_library_borrowing_data_analysis.ipynb)
-
-# RFM Customer Segmentation
-![bg right:70% w:90%](file/image/RFM_customer_seqment.jpg)
-
-# Summary
-- RFM analysis is a powerful tool for understanding customer behavior and segmenting customers based on their purchasing patterns.
-- By analyzing recency, frequency, and monetary value, businesses can tailor their marketing strategies to different customer segments, improving customer retention and maximizing revenue.
-- RFM analysis can be applied across various industries, including retail, e-commerce, and services, to enhance customer relationship management and drive business growth.
-
-# Review
-# What does RFM stand for, and what does each component represent?
-# How can RFM analysis help businesses improve their marketing strategies?
