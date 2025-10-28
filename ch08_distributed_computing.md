@@ -51,8 +51,7 @@ style: |
   }
 
 ---
-# The Evolution of Distributed Computing
-### From MapReduce (MR) to Spark
+# Distributed Computing
 - Distributed computing is to break down a large computational task and distribute it across multiple computers (nodes) to work together collaboratively.
 - Distributed computing is the method of making multiple computers work together to solve a common problem. It makes a computer network appear as a powerful single computer that provides large-scale resources to deal with complex challenges.
 
@@ -65,18 +64,18 @@ style: |
 
 [![分散式架構，就是網站部署到多台主機](https://i.ytimg.com/vi/nugvkYs4lNE/default.jpg)](https://youtu.be/nugvkYs4lNE?si=s31ZpmqjlImZQaS0)
 
-# Distributed Computing Framework: MapReduce and Spark
+# Distributed Computing Framework: MR and Spark
 - **MapReduce (MR)**: developed by Google and divides tasks into two phases: Map and Reduce.
   - **Map Phase**: each node processes a portion of the data and produces intermediate key-value pairs.
   - **Reduce Phase**: the intermediate results are aggregated to produce the final output.
-- **Apache Spark**: open-source and provides an **in-memory** data processing engine.
+- **Spark**: open-source and provides an **in-memory** data processing engine.
   - High speed and ease of use, supports Scala, Java, Python, and R.
 >**Spark** provides a more flexible and efficient way to handle big data processing tasks compared to MapReduce.
 
 # MapReduce
 ![MapReduce](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*1gx5I6RbBoJieKjT-mzRzA.png)
 
-# MapReduce: The Foundation of Distributed Batch Processing
+# MR: Foundation of Distributed Batch Processing
 - Proposed by **Google**, it was the standard model for processing large-scale datasets in the early days of big data.
 - The data processing workflow is abstracted into two simple, parallelizable functions
   - **Map (Mapping)**: Processes input data and transforms it into a series of intermediate key-value pairs `(key, value)`.
@@ -102,15 +101,14 @@ Input → Map → Shuffle & Sort → Reduce → Output
 The Shuffle stage involves extensive network transmission and disk I/O, making it the primary performance bottleneck in MapReduce.
 
 # MapReduce Word Count Example
-[![深入浅出讲解 MapReduce](https://i.ytimg.com/vi/Rz8JCS9TfOQ/default.jpg)](https://youtu.be/Rz8JCS9TfOQ?si=hI5ZShVOhl9GlSwK
-)
+[![深入浅出讲解 MapReduce](https://i.ytimg.com/vi/Rz8JCS9TfOQ/default.jpg)](https://youtu.be/Rz8JCS9TfOQ?si=XR8oWLC7Ky_4VBc5&t=111)
 
 [map_reduce_word_count.ipynb](./file/code/map_reduce_word_count.ipynb)
 
 # Spark
 ![Spark](https://www.bigdatawire.com/wp-content/uploads/2014/10/spark-logo_2.png)
 
-# Spark: A General-Purpose Framework for In-Memory Computing
+# Spark: In-Memory Computing Framework
 - A general-purpose cluster computing system for large-scale data processing.
 - Developed at UC Berkeley's AMPLab and donated to Apache Software Foundation.
 - Key Features:
@@ -134,10 +132,10 @@ Apache Spark provides a unified framework supporting multiple data processing sc
 # Rich APIs
 ![Spark Core Abstractions](https://miro.medium.com/v2/resize:fit:1074/format:webp/1*pDcp95CW4AtS_J6GZ-Blrg.png)
 
-# Data Abstractions in Spark
+# Data Abstractions (Structure) in Spark
 - **RDD (Resilient Distributed Datasets)**: The fundamental abstraction representing a fault-tolerant, parallelizable collection of distributed elements.
 - **DataFrame**: A higher-level abstraction that organizes data into a tabular format with named fields (similar to a relational database table or Pandas DataFrame).
-- **Dataset**: A strongly-typed, object-oriented API that combines the benefits of RDDs and DataFrames, providing type safety and optimized execution.
+- Dataset: A strongly-typed, object-oriented API that combines the benefits of RDDs and DataFrames, providing type safety and optimized execution.
 
 # RDD (1/2)
 RDD (Resilient Distributed Datasets) is a Spark's **fundamental abstraction**, representing a fault-tolerant, parallelizable collection of distributed elements. Similar to Arrays or Lists
@@ -170,16 +168,19 @@ RDD (Resilient Distributed Datasets) is a Spark's **fundamental abstraction**, r
 
 # PySpark: Python API for Apache Spark
 
-Allows users to directly manipulate Spark DataFrames or RDD in a Python environment and execute large-scale MapReduce-style computations.
-
+- PySpark 是 Python 的一個Spark Library，主要是利用Python語法結合Spark的框架,是現在很主流的一個處理大量資料的框架之一。
+- Allows users to directly manipulate Spark DataFrames or RDD in a Python environment and execute large-scale MapReduce-style computations.
 ![PySpark](https://quintagroup.com/services/service-images/apache-spark-python-pyspark.jpg)
 
 # PySpark RDD Practical Examples
+
+![bg right:50% w:80%](https://docs.aws.amazon.com/zh_tw/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/store-data-memory.png)
+
 ### Transformation Operations: map, filter, flatMap, reduceByKey
-Transformation operations are **lazily evaluated**, not immediately computed. Instead, they build a computation plan.
+**Lazily evaluated**, not immediately computed. Instead, they build a computation plan.
 
 ### Action Operations: reduce, collect, count, first, take
-Action operations are **immediately executed**, triggering the computation and returning results to the driver or writing to storage.
+**Immediately executed**, triggering the computation and returning results to the driver or writing to storage.
 
 # 0. Setup PySpark Environment
 
@@ -308,7 +309,7 @@ result = rdd.take(3) # Result: [1, 2, 3]
 # PySpark Word Count Example
 [pyspark_word_count.ipynb](./file/code/pyspark_word_count.ipynb)
 
-# PySpark Syntax Illustration
+# PySpark Syntax of RDD, DataFrame and Spark SQL
 [py_spark_basic.ipynb](./file/code/pyspark_basic.ipynb)
 
 # PySpark Recap
@@ -322,27 +323,14 @@ result = rdd.take(3) # Result: [1, 2, 3]
 |:---|:---|:---|
 | Intermediate Result | Disk | Memory|
 | Performance | Poor | Excellent|
-| Abstraction Level | Low (Map/Reduce only) | High (RDD, DataFrame, Spark SQL) |
 | Use Cases | simple batch processing | batch, streaming, SQL, ML |
 | Development Languages | Java/Scala preferred | Python (PySpark), Scala, Java, R |
 
 # Summary
-
-### 1. The Foundational Role of Distributed Computing
-
-Distributed computing is the foundational infrastructure for processing modern **big data**. Through parallel processing, resource sharing, and fault tolerance mechanisms, it overcomes the limitations of single-machine computing.
-
-### 2. MapReduce's Contribution to Programming Models
-
-MapReduce established the standard programming model for distributed **batch processing**. Through the elegant design of Map and Reduce functions, it ushered in a new era of big data processing.
-
-### 3. Spark's Technological Breakthrough
-
-Apache Spark has become the mainstream distributed computing framework through **in-memory computing** and a **unified engine**, supporting multiple scenarios including batch, streaming, SQL, and machine learning.
-
-### 4. PySpark's Democratization Effect
-
-By leveraging Python's ease of use and rich data science libraries, PySpark **significantly lowers the barrier to entry for distributed computing**, empowering the data science and machine learning fields.
+- Distributed computing enables processing of large-scale data by distributing tasks across multiple machines.
+- MapReduce is a foundational distributed computing model with Map and Reduce phases but suffers from performance bottlenecks due to disk I/O.
+- Apache Spark is a modern distributed computing framework that utilizes in-memory computing for high performance and supports various data processing scenarios.
+- PySpark provides a Python library to work with Spark, allowing users to perform distributed data processing using familiar Python syntax.
 
 # Homework
 

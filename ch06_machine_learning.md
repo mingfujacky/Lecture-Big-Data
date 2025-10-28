@@ -51,87 +51,46 @@ style: |
   }
 
 ---
-# Machine Learning: a Data Modeling Technique
+# Machine Learning
+### A Data Modeling Technique
 >Machine learning is a field of study that gives computers the ability to learn without being explicitly programmed
 
 ![bg right:40% w:90%](file/image/fig3_1.jpg)
 
-# 廣義的 AI 人工智慧
-![bg right:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
-- 人工智慧是一個目標，一種概念，不全然是具體的執行方法。
-- 人類期待電腦或機器能夠透過程式模仿人類的感知、理解與行動，進而完成只有人類智慧才能達成的事情。
+# AI Development History
+![bg right:40% w:90%](file/image/ai_development_history.png)
+- 人工智慧(Artificial Intelligence, AI)可視為一種概念，希望透過軟硬體的結合，讓機器設備能模仿人類的行為，像人一樣執行任務
+- 機器學習(Machine Learning, ML)是透過演算法，使用大量資料進行訓練，進而產生模型，這模型可用於針對新資料進行結果預測
+- 深度學習(Deep Learning, DL) 仿造人類神經網絡的運作方式，經由人工神經網路交互運算，最後判斷出結果, 是目前AI成長最快的領域，生成式AI便是利用DL來生成文字圖像
 
-# 機器學習
-![bg right:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
+# ML vs. DL
+![bg right:60% w:90%](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*LR72C1IOKVwriIzr.png)
+機器學習的大部分算法需要人類尋找特徵，而深度學習可以自動生成特徵
 
-透過演算法，使用大量資料進行訓練，訓練完成後會產生模型。未來當有新的資料，我們可以使用訓練產生的模型進行預測。
-- 垃圾郵件分類
-- 心臟病風險評估
-- YouTube / Netflix 推薦你喜歡的內容
-- 網購系統推薦商品給你
+# ML Steps
+![bg right:60% w:90%](file/image/machine_learning_steps.jpg)
+- 特徵(Feature): 用於模型訓練的輸入變數
+- 標籤(Label): 模型預測的目標變數
+- 訓練集(Training Set): 用於訓練模型的數據集
+- 測試集(Test Set): 用於評估模型性能的數據集
 
-# 深度學習
-![bg right:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
-
-仿造人類大腦學習的方式，經由類神經網路，一層一層下去交互運算，最後判斷出結果，如同讓AI模仿小孩一樣去學習認貓咪
-- 聊天機器人（自然語言生成）
-- 文字生成圖像
-- 人臉辨識 / 影像分類
-- 語音辨識與合成
-- 自駕車
-- 醫療影像分析
-- 自動翻譯
-
-# 生成式AI
-![bg right:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
-
-讓AI成為會創作新內容的數位畫家和數位作家
-  - 學生專屬家教
-  - 文章總結，整理報告及重點分析
-  - 自動生成簡報大綱及內容
-  - 製作社群貼文
-  - 智慧客服
-  - 虛擬直播主
-
-# AI 是從哪裡蹦出來的？
-
-# 
-![bg right:50%, w:85%](https://dahetalk.com/wp-content/uploads/2018/04/e4babae5b7a5e699bae685a7aie799bce5b195e58fb2.png)
-
-# 
-![bg right:80%, w:20%](file/image/AI_history_1.webp)
-
-# 
-![bg right:80%, w:20%](file/image/AI_history_2.webp)
-
-
-
-
-# Machine Learning: a Data Modeling Technique
->Machine learning is a field of study that gives computers the ability to learn without being explicitly programmed
-
->Machine learning is the process by which a computer can work more accurately as it collects and learns from the more data it is given
-![bg right:40% w:90%](file/image/fig3_1.jpg)
-
-# Applications of Machine Learning
-![bg right:60% w:90%](file/image/applications_of_machine_learning.png)
-
-# Python Tools Used in Machine Learning: Scikit-learn
-![bg right:60% w:90%](https://www.kdnuggets.com/wp-content/uploads/Rosidi_10_Essential_Python_Libraries_for_DS_in_2024_2.png)
-
-# Types of Machine Learning
+# ML Algorithms
 ![bg right:60% w:90%](file/image/main_types_of_machine_learning.png)
+
+# ML Applications
+![bg right:60% w:90%](file/image/applications_of_machine_learning.png)
 
 # ML Modeling Process
 Building model is to guess the <span class="blue-text">**target**</span> (response) variable. To do that, it relies on <span class="blue-text">**features**</span> (predictors)— things you already know 
-The process includes:
+![bg right:60% w:90%](https://www.researchgate.net/publication/338971676/figure/fig2/AS:853825418186752@1580579251519/Basic-machine-learning-process-flow.jpg)
+
+# MLOPs Workflow
+MLOPs (ML Operations) workflow includes:
+- Data collection and cleaning
 - Feature engineering and model selection
-- Training the model
-- Model validation
-- Applying the trained model
-
-![bg right:50% w:90%](file/image/ml_workflow.png.webp)
-
+- Model training and validation
+- Model deployment and monitoring
+![bg right:50% w:90%](https://towardsdatascience.com/wp-content/uploads/2024/11/1_dlG-Cju5ke-DKp8DQ9hiA@2x.jpeg)
 
 # Feature engineering
 >Feature Engineering is the process of transforming raw data into meaningful features that can be better understood and used by machine learning models.
@@ -164,29 +123,67 @@ Scikit-learn provides a various methods for classification, regression, clusteri
     - holdout validation (截留驗證法): train once, test once (80% for training and 20% for testing) 
     - k-fold cross-validation(交叉驗證法): train many times on different splits, then average results
 
-# Apply Model
+# Deploy and Monitor Model
 - After validating the model, the final step is to apply it to new, unseen data to make predictions.
 - This involves using the trained model to infer the target variable based on the features of the new data.
 
-# Regression
-Case study: Global Temperature Change Prediction
+# Practice Python Library to Build ML Models
+- Python has a rich ecosystem of libraries for machine learning. One of the most popular is Scikit-learn.
+- **Scikit-learn** provides a various methods for regression, classification, clustering and dimensionality reduction tasks.
+![bg right:50% w:90%](https://www.runoob.com/wp-content/uploads/2024/12/1_3Anz6s5s7dYmfuWspMPbQw.png)
+
+# Regression Concepts
+- 迴歸是一種監督式學習, 把有正確答案的資料給模型來找出規律
+- 其中的線性迴歸用於建立兩個變數關係的模型。通常目標是根據輸入變數(features)值來預測輸出變數值(label)。
+![bg right:40% w:90%](file/image/regression_concept.jpg)
+
+# Linear Regression Case Study
 ![bg right:40% w:90%](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Common_Era_Temperature.svg/1920px-Common_Era_Temperature.svg.png)
 
+Global Temperature Change Prediction
 [`regression_temperature.ipynb`](file/code/regression_temperature.ipynb)
+<br>
+糖尿病病程預測
+[`regression_diabetes.ipynb`](file/code/regression_diabetes.ipynb)
 
-# Classification
+# Clustering Concepts
+- 分群(Clustering)是一種非監督式學習. 非監督式學習演算法只基於輸入資料找出模式，無法正確找出結果。待分析的資料集中沒有任何的答案(label)，只有資料本身
+- 比如，一組身高和體重的資料集，但不知道這組資料中，那一筆資料是男生，那一筆是女生。但希望用這組資料分出男生女生，這種時候就是用非監督式學習。
+- 分群用於將數據點分組，使得同一組內的數據點彼此相似，而不同組之間的數據點則相異。
+- K-Means就是透過這個概念將資料做分群，顧名思義就是將資料分成一群一群。常被用在客戶分群、特徵抽象化、非結構化資料分析。
+
+# K-Means Algorithm Steps
+1. 首先設定要分成多少群：K
+2. 然後在特徵空間中隨機設定K個群心。
+3. 計算每一個資料點到K個群心的距離 ( 基本上使用 L2距離，但也是可以換成別的。)
+4. 將資料點分給距離最近的那個群心。
+5. 在所有資料點都分配完畢後，每一群再用剛剛分配到的資料點算平均(means)來更新群心。
+6. 最後不斷重複3–5 的動作，直到收斂 ( 每次更新後群心都已經不太會變動 ) 後結束。
+![bg right:40% w:90%](file/image/k_means_work_step.gif)
+
+# K-Means Case Study
+
+Randomly generated dataset
+[`kmeans_dummy.ipynb`](file/code/kmeans_dummy.ipynb)
+
+Case study: Iris Flower Dataset
+[`kmeans_iris.ipynb`](file/code/kmeans_iris.ipynb)
+
+# Next Class : Dimensionality Reduction, Classification
+# Dimensionality Reduction
+Case study: PCA on Wine Quality Dataset
+[`pca_wine_quality.ipynb`](file/code/pca_wine_quality.ipynb)
+
+# Classification Concepts
+
+
+
+# Classification Case Study
 Case study: Recognition of Handwritten Digits
 ![bg right:40% w:90%](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png)
 
 [`recognition_handwritten_digits.ipynb`](file/code/recognition_handwritten_digits.ipynb)
 
-# Clustering
-Case study: Iris Flower Dataset
-[`kmeans_iris.ipynb`](file/code/kmeans_iris.ipynb)
-
-# Dimensionality Reduction
-Case study: PCA on Wine Quality Dataset
-[`pca_wine_quality.ipynb`](file/code/pca_wine_quality.ipynb)
 
 # Summary
 - Machine learning is a technique that allows computers to learn from data and make predictions or decisions without being explicitly programmed.
@@ -248,3 +245,56 @@ A. Machine learning can handle large amounts of data more efficiently
 B. Machine learning can adapt and improve its performance as it learns from new data
 C. Machine learning is easier to implement than traditional programming
 D. Machine learning does not require any data to function
+
+# Supplement
+# 廣義的 AI 人工智慧
+![bg right:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
+- 人工智慧是一個目標，一種概念，不全然是具體的執行方法。
+- 人類期待電腦或機器能夠透過程式模仿人類的感知、理解與行動，進而完成只有人類智慧才能達成的事情。
+- 自然語言處理、電腦視覺、語音辨識
+- 機器人、專家系統、博弈系統
+
+# 機器學習
+![bg right:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
+
+透過演算法，使用大量資料進行訓練，訓練完成後會產生模型。未來當有新的資料，我們可以使用訓練產生的模型進行預測。
+- 垃圾郵件分類
+- 心臟病風險評估
+- YouTube / Netflix 推薦你喜歡的內容
+- 網購系統推薦商品給你
+
+# 深度學習
+![bg right:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
+
+仿造人類大腦學習的方式，經由類神經網路，一層一層下去交互運算，最後判斷出結果，如同讓AI模仿小孩一樣去學習認貓咪
+- 聊天機器人（自然語言生成）
+- 文字生成圖像
+- 人臉辨識 / 影像分類
+- 語音辨識與合成
+- 自駕車
+- 醫療影像分析
+- 自動翻譯
+
+# 生成式AI
+![bg right:40% w:90%](https://viscovery.com/wp-content/uploads/2024/08/AI-ML-DL-Gen-AI-LLM-Diffusion-Model-zh.webp)
+
+讓AI成為會創作新內容的數位畫家和數位作家
+  - 學生專屬家教
+  - 文章總結，整理報告及重點分析
+  - 自動生成簡報大綱及內容
+  - 製作社群貼文
+  - 智慧客服
+  - 虛擬直播主
+
+# AI 是從哪裡蹦出來的？
+
+# 
+![bg right:50%, w:85%](https://dahetalk.com/wp-content/uploads/2018/04/e4babae5b7a5e699bae685a7aie799bce5b195e58fb2.png)
+
+# 
+![bg right:80%, w:20%](file/image/AI_history_1.webp)
+
+# 
+![bg right:80%, w:20%](file/image/AI_history_2.webp)
+
+
