@@ -81,7 +81,7 @@ style: |
 ![bg right:60% w:90%](file/image/applications_of_machine_learning.png)
 
 # ML Modeling Process
-Building model is to guess the <span class="blue-text">**target**</span> (response) variable. To do that, it relies on <span class="blue-text">**features**</span> (predictors)— things you already know 
+Building model is to guess the <span class="blue-text">**target / label**</span> (response) variable. To do that, it relies on <span class="blue-text">**features**</span> (predictors)— things you already know 
 ![bg right:60% w:90%](https://www.researchgate.net/publication/338971676/figure/fig2/AS:853825418186752@1580579251519/Basic-machine-learning-process-flow.jpg)
 
 # MLOPs Workflow
