@@ -169,14 +169,44 @@ Randomly generated dataset
 Case study: Iris Flower Dataset
 [`kmeans_iris.ipynb`](file/code/kmeans_iris.ipynb)
 
-# Next Class : Dimensionality Reduction, Classification
+# Dimensionality Reduction Concepts
+- 維度縮減(Dimensionality Reduction)是一種非監督式學習技術，用於將高維數據投影到較低維的空間，同時保留數據的主要特徵和結構。
+- 想像一個擁有數百甚至上千個特徵（欄位）的資料集。這樣的情況可能會帶來計算成本高, 難以視覺化, 特徵冗餘等問題。
+- 主成分分析(Principal Component Analysis, PCA)是最常用的維度縮減技術之一。PCA通過線性變換將數據投影到新的坐標系中，這些坐標系由數據的主要變異方向（主成分）定義。
+![bg right:35% w:90%](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*kK4aMPHQ89ssFEus6RT4Yw.jpeg)
+
+# Dimensionality Reduction Illustration
+![bg right :40% w:90%](https://aiml.com/wp-content/uploads/2025/04/Screenshot-2025-04-29-at-11.45.16.png)
+[![StatQuest: PCA main ideas in only 5 minutes!!!](https://i.ytimg.com/vi/HMOI_lkzW08/default.jpg)](https://youtu.be/HMOI_lkzW08?si=NKSdc3D42Lj2fbd5)
+[What is Dimensionality Reduction?](https://aiml.com/what-is-dimensionality-reduction-2/)
+
+
+
 # Dimensionality Reduction
 Case study: PCA on Wine Quality Dataset
 [`pca_wine_quality.ipynb`](file/code/pca_wine_quality.ipynb)
 
 # Classification Concepts
+- 分類(Classification)是一種監督式學習任務，旨在將一個未知類別的物件依據其特徵(features), 分配到預定義的類別中
+- 分類模型學習從訓練數據中識別特徵與類別之間的關係，然後使用這些關係來預測新數據的類別。
+- 常見的分類算法包括邏輯回歸(Logistic Regression)、Naive Bayes (使用概率論，貝葉斯定理)、決策樹(Decision Trees)、隨機森林(Random Forests)、支持向量機(Support Vector Machines, SVM)和神經網絡(Neural Networks)。
+- Naive Bayes 是一種基於Bayes’ Theorem的機率分類器，用來預測樣本屬於某個類別的機率。
 
+# Bayes' Theorem
+- mach1: 30 wrenches/hr # 機器一的生產速度
+- mach2: 20 wrenches/hr # 機器二的生產速度
+- 整體產品的不良率: 1%, 其中
+  - 50%來自於 mach1
+  - 50%來自於 mach2
+- Q: mach2生產出不良品的機率為何? **P(defect|mach2)**
 
+![bg left:40% w:90% Bayes' Theorem](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ObQp5k1oeVhAZl79HQOkT5UjEla9zrRZw9BQfaAerE_pu6v_y6Dx4uTYejZsTir8XRP0Anea8SRLgEIFFmr-g_c57sfp5BwZBdg9z05EzeLlnTbpwUYHGGZtsqnJpfR2B35oDF6ofsqI/s1600/Bayes_rule.png)
+
+# Practice Bayes' Theorem
+![bg right:70% w:90%](file/image/bayes_theorem.png)
+
+# Naive Bayes Classifier Steps
+[![機器學習 - Machine Learning - Naive Bayes(單純貝氏分類器)介紹 Part 2](https://i.ytimg.com/vi/tlJfftcWMCw/hqdefault.jpg)](https://youtu.be/tlJfftcWMCw?si=prKQc2LPfRfj-oHV)
 
 # Classification Case Study
 Case study: Recognition of Handwritten Digits
