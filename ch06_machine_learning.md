@@ -160,6 +160,7 @@ Global Temperature Change Prediction
 5. 在所有資料點都分配完畢後，每一群再用剛剛分配到的資料點算平均(means)來更新群心。
 6. 最後不斷重複3–5 的動作，直到收斂 ( 每次更新後群心都已經不太會變動 ) 後結束。
 ![bg right:40% w:90%](file/image/k_means_work_step.gif)
+(https://web.ntnu.edu.tw/~algo/Clustering3.png)
 
 # K-Means Case Study
 
