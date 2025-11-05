@@ -150,12 +150,12 @@ Global Temperature Change Prediction
 - 分群(Clustering)是一種非監督式學習. 非監督式學習演算法只基於輸入資料找出模式，無法正確找出結果。待分析的資料集中沒有任何的答案(label)，只有資料本身
 - 比如，一組身高和體重的資料集，但不知道這組資料中，那一筆資料是男生，那一筆是女生。但希望用這組資料分出男生女生，這種時候就是用非監督式學習。
 - 分群用於將數據點分組，使得同一組內的數據點彼此相似，而不同組之間的數據點則相異。
-- K-Means就是透過這個概念將資料做分群，顧名思義就是將資料分成一群一群。常被用在客戶分群、特徵抽象化、非結構化資料分析。
+- K-Means就是透過這個概念將資料做分群，顧名思義就是將資料分成一群一群。常被用在客戶分群、文件分群、商品推薦
 
 # K-Means Algorithm Steps
 1. 首先設定要分成多少群：K
 2. 然後在特徵空間中隨機設定K個群心。
-3. 計算每一個資料點到K個群心的距離 ( 基本上使用 L2距離，但也是可以換成別的。)
+3. 計算每一個資料點到K個群心的距離 (基本上使用 L2/歐幾里得距離，但也是可以換成別的。)
 4. 將資料點分給距離最近的那個群心。
 5. 在所有資料點都分配完畢後，每一群再用剛剛分配到的資料點算平均(means)來更新群心。
 6. 最後不斷重複3–5 的動作，直到收斂 ( 每次更新後群心都已經不太會變動 ) 後結束。
@@ -169,27 +169,10 @@ Randomly generated dataset
 Case study: Iris Flower Dataset
 [`kmeans_iris.ipynb`](file/code/kmeans_iris.ipynb)
 
-# Dimensionality Reduction Concepts
-- 維度縮減(Dimensionality Reduction)是一種非監督式學習技術，用於將高維數據投影到較低維的空間，同時保留數據的主要特徵和結構。
-- 想像一個擁有數百甚至上千個特徵（欄位）的資料集。這樣的情況可能會帶來計算成本高, 難以視覺化, 特徵冗餘等問題。
-- 主成分分析(Principal Component Analysis, PCA)是最常用的維度縮減技術之一。PCA通過線性變換將數據投影到新的坐標系中，這些坐標系由數據的主要變異方向（主成分）定義。
-![bg right:35% w:90%](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*kK4aMPHQ89ssFEus6RT4Yw.jpeg)
-
-# Dimensionality Reduction Illustration
-![bg right :40% w:90%](https://aiml.com/wp-content/uploads/2025/04/Screenshot-2025-04-29-at-11.45.16.png)
-[![StatQuest: PCA main ideas in only 5 minutes!!!](https://i.ytimg.com/vi/HMOI_lkzW08/default.jpg)](https://youtu.be/HMOI_lkzW08?si=NKSdc3D42Lj2fbd5)
-[What is Dimensionality Reduction?](https://aiml.com/what-is-dimensionality-reduction-2/)
-
-
-
-# Dimensionality Reduction
-Case study: PCA on Wine Quality Dataset
-[`pca_wine_quality.ipynb`](file/code/pca_wine_quality.ipynb)
-
 # Classification Concepts
 - 分類(Classification)是一種監督式學習任務，旨在將一個未知類別的物件依據其特徵(features), 分配到預定義的類別中
 - 分類模型學習從訓練數據中識別特徵與類別之間的關係，然後使用這些關係來預測新數據的類別。
-- 常見的分類算法包括邏輯回歸(Logistic Regression)、Naive Bayes (使用概率論，貝葉斯定理)、決策樹(Decision Trees)、隨機森林(Random Forests)、支持向量機(Support Vector Machines, SVM)和神經網絡(Neural Networks)。
+- 常見的分類算法包括 Naive Bayes (使用概率論，貝葉斯定理)、決策樹(Decision Trees)、支持向量機(Support Vector Machines, SVM)等。
 - Naive Bayes 是一種基於Bayes’ Theorem的機率分類器，用來預測樣本屬於某個類別的機率。
 
 # Bayes' Theorem
@@ -326,5 +309,20 @@ D. Machine learning does not require any data to function
 
 # 
 ![bg right:80%, w:20%](file/image/AI_history_2.webp)
+
+# Dimensionality Reduction Concepts
+- 維度縮減(Dimensionality Reduction)是一種非監督式學習技術，用於將高維數據投影到較低維的空間，同時保留數據的主要特徵和結構。
+- 想像一個擁有數百甚至上千個特徵（欄位）的資料集。這樣的情況可能會帶來計算成本高, 難以視覺化, 特徵冗餘等問題。
+- 主成分分析(Principal Component Analysis, PCA)是最常用的維度縮減技術之一。PCA通過線性變換將數據投影到新的坐標系中，這些坐標系由數據的主要變異方向（主成分）定義。
+![bg right:35% w:90%](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*kK4aMPHQ89ssFEus6RT4Yw.jpeg)
+
+# Dimensionality Reduction Illustration
+![bg right :40% w:90%](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ba0XpZtJrgh7UpzWcIgZ1Q.jpeg)
+[![什么是降维算法，PCA主成分分析的原理详解](https://i.ytimg.com/vi/WquvZBWzI5Q/default.jpg)](https://youtu.be/WquvZBWzI5Q?si=4sd6X8oX922HH4-z)
+
+
+# Dimensionality Reduction
+Case study: PCA on Wine Quality Dataset
+[`pca_wine_quality.ipynb`](file/code/pca_wine_quality.ipynb)
 
 

@@ -90,6 +90,9 @@ style: |
 - By analyzing recency, frequency, and monetary value, businesses can tailor their marketing strategies to different customer segments, improving customer retention and maximizing revenue.
 - RFM analysis can be applied across various industries, including retail, e-commerce, and services, to enhance customer relationship management and drive business growth.
 
+# Homework
+HW5 - RFM (Recency, Frequency, Monetary) 客戶價值分析
+
 # Review
 # What does RFM stand for, and what does each component represent?
 # How can RFM analysis help businesses improve their marketing strategies?
