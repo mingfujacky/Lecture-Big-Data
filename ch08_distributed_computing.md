@@ -52,8 +52,8 @@ style: |
 
 ---
 # Distributed Computing
-- Distributed computing is to break down a large computational task and distribute it across multiple computers (nodes) to work together collaboratively.
-- Distributed computing is the method of making multiple computers work together to solve a common problem. It makes a computer network appear as a powerful single computer that provides large-scale resources to deal with complex challenges.
+- Distributed computing is the method of making **multiple computers work together** to solve a common problem. It makes a computer network appear as a powerful single computer that provides large-scale resources to deal with complex challenges.
+- Distributed computing is to **break down** a large task and distribute it across multiple computers (nodes) to work together collaboratively.
 
 # Why Distributed Computing?
 - To solve the problem of processing **Big Data** and **complex computations** that a single machine cannot handle.
@@ -63,6 +63,22 @@ style: |
   - High Fault Tolerance: partial node failures in the system do not affect overall operation
 
 [![分散式架構，就是網站部署到多台主機](https://i.ytimg.com/vi/nugvkYs4lNE/default.jpg)](https://youtu.be/nugvkYs4lNE?si=s31ZpmqjlImZQaS0)
+
+# Distributed Computing Architecture
+- **Cluster Computing**: a group of interconnected computers (nodes) working together as a single system to perform tasks.
+- **Cloud Computing**: provides on-demand access to computing resources (servers, storage, databases, networking, software) over the internet.
+- **Grid Computing**: a geographically distributed computer networks work together to perform common tasks. You can make grid computing from computing resources which belong to multiple individuals or organizations.
+[![Distributed Computing: Cluster, Cloud and Grid Computing](https://i.ytimg.com/vi/HJiXLDItJSY/default.jpg)](https://youtu.be/HJiXLDItJSY?si=iR_IEip35ACx7by9)
+[![Grid Computing](https://i.ytimg.com/vi/QHWy94eBfis/default.jpg)](https://youtu.be/QHWy94eBfis?si=2wzFxSigMlasyLwV)
+
+
+# Data Processing Types
+- Batch Processing: process data periodically in batches. eg. Payroll System
+- Real-Time (streaming) Processing: process data as it arrives. eg. Sensor monitoring
+[![Batch processing vs real-time processing](https://i.ytimg.com/vi/M1Gq53Hf0_Y/default.jpg)](https://youtu.be/M1Gq53Hf0_Y?si=E1EHbwCsQCMOZC1t)
+[![What is Stream Processing?](https://i.ytimg.com/vi/ya4298V8Mqo/default.jpg)](https://youtu.be/ya4298V8Mqo?si=xXTRwXMdGZ3NWHYJ)
+[![Batch vs Real time Processing](https://i.ytimg.com/vi/2VJLWot9T7Y/default.jpg)](https://youtu.be/2VJLWot9T7Y?si=V6pd4kLJ90mWQzQ_)
+
 
 # Distributed Computing Framework: MR and Spark
 - **MapReduce (MR)**: developed by Google and divides tasks into two phases: Map and Reduce.
@@ -117,25 +133,34 @@ The Shuffle stage involves extensive network transmission and disk I/O, making i
   - **Rich APIs**: Provides high-level APIs in Scala, Java, Python (PySpark), and R.  
   - **Performance Improvement**: 10 ~ 100x faster
 # In-Memory Computing
-![In-Memory Computing](https://learn.microsoft.com/cs-cz/azure/hdinsight/spark/media/apache-spark-overview/map-reduce-vs-spark-large.svg#lightbox)
+![In-Memory Computing](https://www.datasciencecentral.com/wp-content/uploads/2021/10/image-17-2.png)
 
-# Unified Engine
+# Unified Engine and Rich APIs
+![bg right:40% w:100%](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ep6UOAKIndF1-g6PcF28aQ.png)
 
 Apache Spark provides a unified framework supporting multiple data processing scenarios:
-
-- **Batch Processing** - Traditional bulk data processing
-- **Streaming** - Real-time data stream processing
-- **Spark SQL** - Structured data querying
+- **Code** - Batch data processing
+- **Streaming** - Streaming data processing
+- **SQL** - Structured data querying
 - **MLlib** - Distributed machine learning
 - **GraphX** - Graph computation and analysis
 
-# Rich APIs
-![Spark Core Abstractions](https://miro.medium.com/v2/resize:fit:1074/format:webp/1*pDcp95CW4AtS_J6GZ-Blrg.png)
+APIs: Scala, Java, Python, R
+
+# Spark RDD and Framework
+<img src="https://www.cloudduggu.com/spark/rdd-introduction/rdd-operation.png" width="45%">
+<img src="https://www.databricks.com/wp-content/uploads/2018/05/Spark-Applications.png" width="50%">
+
+# Spark Overview
+[![What exactly is Apache Spark?](https://i.ytimg.com/vi/ymtq8yjmD9I/default.jpg)](https://youtu.be/ymtq8yjmD9I?si=sFoYA3fc7eNFCyOu)
+
+
+
 
 # Data Abstractions (Structure) in Spark
 - **RDD (Resilient Distributed Datasets)**: The fundamental abstraction representing a fault-tolerant, parallelizable collection of distributed elements.
 - **DataFrame**: A higher-level abstraction that organizes data into a tabular format with named fields (similar to a relational database table or Pandas DataFrame).
-- Dataset: A strongly-typed, object-oriented API that combines the benefits of RDDs and DataFrames, providing type safety and optimized execution.
+- Dataset: A strongly-typed, distributed collection of data that combines the benefits of RDDs and DataFrames, providing type safety and object-oriented programming features.(available only in Scala/Java, not in PySpark)
 
 # RDD (1/2)
 RDD (Resilient Distributed Datasets) is a Spark's **fundamental abstraction**, representing a fault-tolerant, parallelizable collection of distributed elements. Similar to Arrays or Lists
@@ -169,18 +194,20 @@ RDD (Resilient Distributed Datasets) is a Spark's **fundamental abstraction**, r
 # PySpark: Python API for Apache Spark
 
 - PySpark 是 Python 的一個Spark Library，主要是利用Python語法結合Spark的框架,是現在很主流的一個處理大量資料的框架之一。
-- Allows users to directly manipulate Spark DataFrames or RDD in a Python environment and execute large-scale MapReduce-style computations.
+- Allows users to directly manipulate Spark DataFrames or RDD in a Python environment.
 ![PySpark](https://quintagroup.com/services/service-images/apache-spark-python-pyspark.jpg)
 
-# PySpark RDD Practical Examples
+# PySpark Operator RDD
 
 ![bg right:50% w:80%](https://docs.aws.amazon.com/zh_tw/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/store-data-memory.png)
 
-### Transformation Operations: map, filter, flatMap, reduceByKey
-**Lazily evaluated**, not immediately computed. Instead, they build a computation plan.
+**Transformation operations**
+  - map, filter, flatMap, reduceByKey
+  - Lazily evaluated, not immediately computed. Instead, they build a computation plan.
 
-### Action Operations: reduce, collect, count, first, take
-**Immediately executed**, triggering the computation and returning results to the driver or writing to storage.
+**Action operations**
+  - reduce, collect, count, first, take
+  - immediately executed, triggering the computation and returning results to the driver or writing to storage.
 
 # 0. Setup PySpark Environment
 
@@ -225,8 +252,9 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("PySpark_Get_Started").getOrCreate()
 
 # Split each string into words and flatten
-rdd = spark.sparkContext.parallelize(["Hello World"])
-result = rdd.flatMap(lambda x: x.split()) # Result: ["Hello", "World"]
+rdd = spark.sparkContext.parallelize(["Hello world", "Apache Spark"])
+result_map = rdd.map(lambda x: x.split()) # Result: [["Hello", "world"], ["Apache", "Spark"]]
+result_flatMap = rdd.flatMap(lambda x: x.split()) # Result: ["Hello", "world", "Apache", "Spark"]
 ```
 **Explanation**: Maps and then flattens the results, commonly used for tokenization or splitting operations.
 
@@ -313,8 +341,6 @@ result = rdd.take(3) # Result: [1, 2, 3]
 [py_spark_basic.ipynb](./file/code/pyspark_basic.ipynb)
 
 # PySpark Recap
-[![What exactly is Apache Spark?](https://i.ytimg.com/vi/ymtq8yjmD9I/default.jpg)](https://youtu.be/ymtq8yjmD9I?si=4sdvpou55sJ4aqtn)
-
 [![Spark Introduction | PySpark Tutorial for Beginners](https://i.ytimg.com/vi/avdPRFopLNw/default.jpg)](https://youtu.be/avdPRFopLNw?si=AFv6SrO0jslKazys)
 
 # MapReduce vs. Spark Comparison

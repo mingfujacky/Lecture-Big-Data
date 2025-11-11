@@ -79,9 +79,6 @@ style: |
 # RFM Analysis Example
 [`RFM_sales_data.ipynb`](file/code/RFM_sales_data.ipynb)
 
-# RFM Analysis on Library Borrowing Data
-[`RFM_hsinchu_city_library_borrowing_data_analysis.ipynb`](file/code/RFM_hsinchu_city_library_borrowing_data_analysis.ipynb)
-
 # RFM Customer Segmentation
 ![bg right:70% w:90%](file/image/RFM_customer_seqment.jpg)
 
