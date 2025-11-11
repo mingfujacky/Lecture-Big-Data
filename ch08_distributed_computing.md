@@ -122,7 +122,7 @@ The Shuffle stage involves extensive network transmission and disk I/O, making i
 [map_reduce_word_count.ipynb](./file/code/map_reduce_word_count.ipynb)
 
 # Spark
-![Spark](https://www.bigdatawire.com/wp-content/uploads/2014/10/spark-logo_2.png)
+![Spark](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1024px-Apache_Spark_logo.svg.png?20210416091439)
 
 # Spark: In-Memory Computing Framework
 - A general-purpose cluster computing system for large-scale data processing.
