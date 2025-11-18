@@ -217,3 +217,62 @@ for result in results:
 - A graph database is a type of NoSQL database that uses graph structures to represent and store data.
 - Graph databases are designed to handle highly interconnected data and complex relationships between data points.
 - Examples: Neo4j
+
+# Neo4j: Graph Database
+![](https://cdn-images-1.medium.com/max/2000/1*p1vMcBoPO_BsxCpilH2_4g.png)
+![](https://cdn-images-1.medium.com/max/2000/1*Dkm1jWiB_3-wUDCMxNp6cw.png)
+![bg right:50% w:90%](https://cdn-images-1.medium.com/max/2596/1*mm1VsNPAUzDtkCXpBhfL5Q.png)
+
+# Illustrate Graph Database
+[![Graph Databases in 60 seconds](https://i.ytimg.com/vi/wO5AI1oDGjQ/default.jpg)](https://youtu.be/wO5AI1oDGjQ?si=0Ey3-qk1LR7qziKr)
+
+[![What is Graph Database? (Its Use Cases, Examples & Properties)](https://i.ytimg.com/vi/VPDmk68DcJw/default.jpg)](https://youtu.be/VPDmk68DcJw?si=JqYHhlDy0PiiBtaJ)
+
+# Summary
+- A database is a collection of related data that is organized and managed by a database management system (DBMS).
+- DBMS provides advantages such as improved data sharing, security, integration, and access.
+- SQL databases are structured and use SQL language, while NoSQL databases are schema-less and handle unstructured data.
+- NoSQL databases include key-value stores, column-oriented databases, document databases, and graph databases, each with its own strengths and use cases.
+- Examples of SQL databases include MySQL and PostgreSQL, while NoSQL databases include Redis, Cassandra, MongoDB and Neo4j.
+
+# Review Questions
+# Which among the following databases is not a NoSQL database?
+A MongoDB
+B SQL Server
+C Cassandra
+D None of the above
+
+# NoSQL databases are used mainly for handling large volumes of ________ data.
+A unstructured
+B structured
+C semi-structured
+D All of the above
+
+# Which of the following is a column store database?
+A Cassandra
+B Oracle
+C MongoDB
+D Redis
+
+# Which of the following is a NoSQL database type?
+A Key-value
+B Document
+C Graph
+D All of the above
+
+# The simplest of all the databases is ________.
+A key-value store database
+B column-store database
+C document-oriented database
+D graph-oriented database
+
+# Many of the NoSQL databases support auto ______ for high availability.
+A scaling
+B partition
+C replication
+D backup 
+# A ________ database stores the entities also known as nodes and the relationships between them.
+A key-value store
+B column-store
+C document-oriented
+D graph-oriented
