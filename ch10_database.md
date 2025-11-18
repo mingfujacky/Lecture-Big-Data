@@ -230,10 +230,10 @@ for result in results:
 
 # Summary
 - A database is a collection of related data that is organized and managed by a database management system (DBMS).
-- DBMS provides advantages such as improved data sharing, security, integration, and access.
+- DBMS provides advantages like improved data sharing, security, integration, and access.
 - SQL databases are structured and use SQL language, while NoSQL databases are schema-less and handle unstructured data.
-- NoSQL databases include key-value stores, column-oriented databases, document databases, and graph databases, each with its own strengths and use cases.
-- Examples of SQL databases include MySQL and PostgreSQL, while NoSQL databases include Redis, Cassandra, MongoDB and Neo4j.
+- NoSQL databases include key-value stores (Redis), column-oriented databases (Cassandra), document databases (MongoDB), and graph databases (Neo4j), each with its own strengths and use cases.
+[![Battle of SQL and NoSQL](https://i.ytimg.com/vi/8QK_RNLFfZM/default.jpg)](https://youtube.com/shorts/8QK_RNLFfZM?si=_nXaHGl9X_CbC4JH)
 
 # Review Questions
 # Which among the following databases is not a NoSQL database?
