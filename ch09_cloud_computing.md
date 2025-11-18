@@ -162,6 +162,9 @@ Problems with traditional IT approach
   - AWS Rekognition for Machine Learning
   - Gmail, Dropbox, Zoom
 
+ [![Types of Cloud Services - IaaS, PaaS, & SaaS](https://i.ytimg.com/vi/JoCFfTOtq4w/default.jpg)](https://youtu.be/JoCFfTOtq4w?si=TTQOyE6qAo2zhRJT)
+ 
+
 # Shared Responsibility
 ![bg right:50% w:90%](https://assets.bacancytechnology.com/blog/wp-content/uploads/2023/11/03065559/Internal-image-4.jpg)
 

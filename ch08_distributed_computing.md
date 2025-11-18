@@ -151,6 +151,13 @@ APIs: Scala, Java, Python, R
 <img src="https://www.cloudduggu.com/spark/rdd-introduction/rdd-operation.png" width="45%">
 <img src="https://www.databricks.com/wp-content/uploads/2018/05/Spark-Applications.png" width="50%">
 
+# Spark RDD（Resilient Distributed Dataset)
+- RDD (彈性分散式資料集) 是 Spark 進行分散式資料處理的基礎抽象資料結構。它可以將大規模資料集分散在多個計算節點上，並實現高效能的平行處理。
+- 彈性與容錯性 (Resilient)：RDD 能夠自動從故障中恢復，確保資料處理的可靠性。
+- 分散式 (Distributed)：RDD 將資料分散存儲在多個節點上，利用集群進行平行處理。
+- 不可變性 (Immutable)：一旦建立，RDD 就不能被修改。任何轉換操作（如 map、filter）都會產生一個新的 RDD。
+- 惰性計算 (Lazy Evaluation)：轉換操作不會立即執行，而是記錄下來形成一個執行計畫。只有當觸發一個「行動」（Action）操作（如 count、collect、save）時，才會真正執行計算，這種機制有助於最佳化整體執行效率。
+
 # Spark Overview
 [![What exactly is Apache Spark?](https://i.ytimg.com/vi/ymtq8yjmD9I/default.jpg)](https://youtu.be/ymtq8yjmD9I?si=sFoYA3fc7eNFCyOu)
 
