@@ -51,7 +51,7 @@ style: |
   }
 
 ---
-# Cloud Computing
+# (public) Cloud Computing
 ![bg right:50% w:90%](https://www.sim-networks.com/user/pages/kb/13.what-is-cloud/Cloud-Illustration.png)
 
 # Traditional IT Infrastructure
@@ -68,10 +68,10 @@ Problems with traditional IT approach
 # Can We Externalize All of This?
 ![bg right:60% w:90%](https://www.altexsoft.com/static/blog-post/2023/11/ff312e03-90fd-48d7-9914-6e6dc0ce3a96.jpg)
 
-# What is Cloud Computing
+# What is (public) Cloud Computing
 ![bg right:60% w:90%](https://zd-brightspot.s3.us-east-1.amazonaws.com/wp-content/uploads/2021/07/09134159/38-3-e1715636964776.png)
 
-# Introduction of Cloud Computing
+# Introduction of (public) Cloud Computing
 - Cloud computing is the <span class="blue-text">on-demand delivery</span> of compute power, database storage, applications, and other IT resources
 - Through a cloud services platform with <span class="blue-text">pay-as-you-go pricing</span>
 - You can access as many resources as you need, almost instantly
@@ -79,12 +79,7 @@ Problems with traditional IT approach
 - Many legacy and traditional data center resources are <span class="blue-text">on-premises</span>. There has been a shift to migrate IT assets to the cloud in recent years or creating <span class="blue-text">hybrid environments</span> that use a mix of cloud and on-premises solutions. 
 - Large clouds often have functions distributed over <u>multiple locations (data center)</u>.
 
-# Major Cloud Service Providers
-<span class="blue-text">Amazon (AWS, Amazon Web Services)</span>: Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from AWS.<br>
-<span class="blue-text">Microsoft (Azure)</span>: 雲端運算可透過網際網路來傳遞伺服器、儲存體、資料庫、網路、軟體等運算服務，以加快創新的速度、確保資源彈性，並實現規模經濟。您只需支付所使用的雲端服務費用，更有效率地執行基礎結構，並隨著業務需求變更來進行調整。<br>
-<span class="blue-text">Google (GCP, Google Cloud Platform)</span>: 雲端運算架構能根據使用者需求，透過網路以服務的形式提供運算資源，例如儲存空間和基礎架構。這樣個人和企業就不必自行管理實體資源，而且用多少付多少。
-
-# Deployment Models
+# Cloud Deployment Models
 - Public cloud
 - Private cloud (on-premises)
 - Community cloud (government, education, back)
@@ -104,7 +99,12 @@ Problems with traditional IT approach
   - Control over sensitive assets in your private infrastructure
   - Flexibility and cost-effectiveness of the public cloud
 
-# Characteristics of Cloud Computing
+# Major (public) Cloud Service Providers
+<span class="blue-text">Amazon (AWS, Amazon Web Services)</span>: Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from AWS.<br>
+<span class="blue-text">Microsoft (Azure)</span>: 雲端運算可透過網際網路來傳遞伺服器、儲存體、資料庫、網路、軟體等運算服務，以加快創新的速度、確保資源彈性，並實現規模經濟。您只需支付所使用的雲端服務費用，更有效率地執行基礎結構，並隨著業務需求變更來進行調整。<br>
+<span class="blue-text">Google (GCP, Google Cloud Platform)</span>: 雲端運算架構能根據使用者需求，透過網路以服務的形式提供運算資源，例如儲存空間和基礎架構。這樣個人和企業就不必自行管理實體資源，而且用多少付多少。  
+
+# Characteristics of (public) Cloud Computing
 - On-demand self service: users can provision resources and use them without human interaction from the service provider
 - Broad network access: resources available over the internet
 - Multi-tenancy and resource pooling: multiple customers can share the same infrastructure and applications with security and privacy
@@ -113,7 +113,7 @@ Problems with traditional IT approach
   - Quickly and easily scale based on demand
 - Measured service: Usage is measured, users pay correctly for what they have used
 
-# Advantages of Cloud Computing
+# Advantages of (public) Cloud Computing
 - Trade capital expense (CAPEX) for operational expense (OPEX)
 - Pay On-Demand: don’t own hardware
 - Reduced Total Cost of Ownership (TCO) & Operational Expense (OPEX)
@@ -125,7 +125,7 @@ Problems with traditional IT approach
 - Stop spending money running and maintaining data centers
 - Go global in minutes: leverage the service providers' global infrastructure
 
-# Problems Solved by Cloud Computing
+# Problems Solved by (public) Cloud Computing
 - Flexibility: change resource types when needed
 - Cost-Effectiveness: pay as you go, for what you use
 - Scalability: accommodate larger loads by making hardware stronger or adding additional nodes
