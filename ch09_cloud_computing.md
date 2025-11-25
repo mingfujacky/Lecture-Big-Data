@@ -82,7 +82,7 @@ Problems with traditional IT approach
 # Cloud Deployment Models
 - Public cloud
 - Private cloud (on-premises)
-- Community cloud (government, education, back)
+- Community cloud (government, education, bank)
 - Hybrid cloud
 ![bg right:60% w:90%](https://uniprint.net/wp-content/uploads/2017/05/Cloud-deployment-structures-diagram.png)
 
