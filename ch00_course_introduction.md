@@ -80,12 +80,17 @@ Material: https://github.com/mingfujacky/Lecture-Big-Data.git
   - 1 point for excused absence (with approved leave)
   - 0 point for unexcused absence
 - Homework (30%): 6 assignments will be given (late submissions will not be accepted)
-- Mid-term exam (20%): closed-book written exam, covering the first half of the course.
-- Final-term exam (20%): closed-book written exam, covering the entire course.
+- Mid-term exam (20%) 
+- Final-term exam (20%)
 - Project (20%): 
-  - (0%)  Progress report oral presentation: Week 9
-  - (10%) Final report oral presentation: Week 15
-  - (10%) Submit final written report by Week 17 (don't be late)
+  - Final report oral presentation (10%): Week 15
+  - Submit final written report (10%): Week 17 (don't be late)
+
+# 期中期末考試規定
+- 請根據助教指示安排進入考場入座，不得攜帶書本及參考資料
+- 考試期間不得使用手機或其他的具通訊功能的設備，請將此種設備放置在監考人員的可視範圍內，如桌上或教室前面
+- 攜帶學生證或其他可以確認身份的證件
+- 考試時間為六十分鐘
 
 # Course Schedule
 [114 1st Semester](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=114&Sem=1&CrsNo=520020&lang=)
