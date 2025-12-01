@@ -148,10 +148,7 @@ for result in results:
   - Great efforts to adjust schema after it’s implemented
 - Schemaless databases
   - no predefined schema the data must conform to before it’s added to the database.
-
-# How do NoSQL databases work
-[![How do NoSQL databases work](https://i.ytimg.com/vi/0buKQHokLK8/default.jpg)](https://youtu.be/0buKQHokLK8?si=7jI2FSbxgcfJVBmG)  
-
+  
 # SQL DB vs NoSQL DB
 |SQL DB|NoSQL DB|
 |---|---|
@@ -276,3 +273,7 @@ A key-value store
 B column-store
 C document-oriented
 D graph-oriented
+
+# Backup
+# How do NoSQL databases work
+[![How do NoSQL databases work](https://i.ytimg.com/vi/0buKQHokLK8/default.jpg)](https://youtu.be/0buKQHokLK8?si=7jI2FSbxgcfJVBmG)
