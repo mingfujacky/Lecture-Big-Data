@@ -239,12 +239,6 @@ B SQL Server
 C Cassandra
 D None of the above
 
-# NoSQL databases are used mainly for handling large volumes of ________ data.
-A unstructured
-B structured
-C semi-structured
-D All of the above
-
 # Which of the following is a column store database?
 A Cassandra
 B Oracle
